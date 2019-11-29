@@ -1,0 +1,8 @@
+2019-11-29 16:16:22.936  INFO 239224 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Starting BlogApplication on DESKTOP-2H3LM8S with PID 239224 (E:\biancheng\webStormWork\blog\target\classes started by 10754 in E:\biancheng\webStormWork\blog)
+2019-11-29 16:16:22.940  INFO 239224 --- [restartedMain] com.sxsduki.blog.BlogApplication         : The following profiles are active: pro
+2019-11-29 16:16:25.772  WARN 239224 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-29 16:16:28.037  WARN 239224 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-11-29 16:16:28.139  WARN 239224 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-11-29 16:16:28.395  INFO 239224 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Started BlogApplication in 6.502 seconds (JVM running for 8.136)
+2019-11-29 16:26:26.227  INFO 239124 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Starting BlogApplication on DESKTOP-2H3LM8S with PID 239124 (E:\biancheng\webStormWork\blog\target\classes started by 10754 in E:\biancheng\webStormWork\blog)
+2019-11-29 16:26:26.232  INFO 239124 --- [restartedMain] com.sxsduki.blog.BlogApplication         : The following profiles are active: pro
