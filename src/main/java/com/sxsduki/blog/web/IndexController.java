@@ -26,4 +26,12 @@ public class IndexController {
 
     }
 
+    @GetMapping("/blog")
+    public String blog(){
+
+        System.out.println("--------blog---------");
+        return "blog";
+
+    }
+
 }

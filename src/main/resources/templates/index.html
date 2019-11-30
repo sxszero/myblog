@@ -61,14 +61,14 @@
  		<!--pusher不能乱改，为了侧边栏sidebar的性能 semanticUI需要把sidebar放在pusher下-->
 		<div class="pusher">
 			<!-- 导航 -->
-			<nav class="ui  attached segment m-padded-tb-mini m-shadow-small">
+			<nav th:replace="_fragments :: menu(1)" class="ui  attached segment m-padded-tb-mini m-shadow-small">
 				<div class="ui container">
 					<div class="ui  secondary stackable menu">
 						<a class="teal item">
 							<img class="ui circular image" src="https://sxsduki.oss-cn-beijing.aliyuncs.com/static/back.jpg" style="width: 50px;height: 50px;">
 							&nbsp;&nbsp;&nbsp;blog
 						</a>&nbsp;
-						<a href="index.html" class="active m-item item m-mobile-hide"><i class="fas fa-carrot"></i>首页</a>
+						<a href="index.html" class="m-item item m-mobile-hide"><i class="fas fa-carrot"></i>首页</a>
 						<a href="#" class="m-item item m-mobile-hide"><i class="fas fa-ice-cream"></i>分类</a>
 						<a href="#" class="m-item item m-mobile-hide"><i class="fas fa-candy-cane"></i>标签</a>
 						<a href="#" class="m-item item m-mobile-hide"><i class="fas fa-pizza-slice"></i>归档</a>
@@ -101,11 +101,9 @@
 											<div class="ui side active m-text-spaced">
 												<span>They always need to have things to explained.</span>——————by&nbsp;&nbsp;<span> The Little Prince</span>
 											</div>
-											<div class="ui side" th:each="message : ${messages}">
-												<div class="m-text-spaced">
+											<div class="ui side m-text-spaced" th:each="message : ${messages}">
 													<span th:text="${#strings.abbreviate(message.content,30)}">哪有人喜欢孤独，只是不喜欢失望罢了。</span>
-													——————&nbsp;&nbsp;<span th:text="${message.nickname}">村上春树</span>
-												</div>
+													——————<span th:text="${message.nickname}">村上春树</span>
 											</div>
 
 										</div>
@@ -625,13 +623,13 @@
 
 			</div>
 			<!-- 底部 -->
-			<footer class="ui inverted vertical segment m-padded-tb-massive">
+			<footer th:replace="_fragments :: footer" >
 				<div class="ui center aligned container">
 					<div class="ui inverted divided stackable grid">
 						<div class="three wide column">
 							<div class="ui inverted link list">
 								<div class="item">
-									<img src="../static/image/mmqrcode1574749973626.png" th:src="@{/image/mmqrcode1574749973626.png}" class="ui rounded image" alt="" style="width: 110px;" />
+									<img src="../static/image/mmqrcode1574749973626.png" class="ui rounded image" alt="" style="width: 110px;" />
 								</div>
 							</div>
 						</div>
@@ -658,14 +656,18 @@
 
 					</div>
 					<div class="ui inverted section divider"></div>
-					<p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2019 - 2020  Designed by sxsduki</p>
+					<p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2019 - 2020 Designed by sxsduki</p>
 				</div>
 
 
 			</footer>
+
 		</div>
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+		<!--/*/<th:block th:replace="_fragments :: script">/*/-->
+			<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+		<!--/*/</th:block>/*/-->
+
 		<script type="text/javascript">
 			var audio = document.getElementsByTagName('audio')[0];
 			$('.music-1').click(function () {
