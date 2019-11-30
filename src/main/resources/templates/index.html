@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-	<head>
+	<head th:replace="_fragments :: head(~{::title})">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>sxsduki的博客</title>
@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
 		 crossorigin="anonymous">
-		<link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}"/>
+		<link rel="stylesheet" href="../static/css/me.css"/>
 		<link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}" />
 
 	</head>
@@ -50,15 +50,16 @@
 			    <div class="header item m-text-spaced m-padded-tb-big ">
 			        <span>1.Lemon-米津玄师</span>
 			    </div>
-				<a class="music-2" href="#">
-				    <div class="header item m-text-spaced m-padded-tb-big ">
-				        <span>2.雨晴るる-ヨルシカ</span>
-				    </div>
-				</a>
 			</a>
+			<a class="music-2" href="#">
+				<div class="header item m-text-spaced m-padded-tb-big ">
+					<span>2.雨晴るる-ヨルシカ</span>
+				</div>
+			</a>
+
 		</div>
-		
-		<div class="app">
+ 		<!--pusher不能乱改，为了侧边栏sidebar的性能 semanticUI需要把sidebar放在pusher下-->
+		<div class="pusher">
 			<!-- 导航 -->
 			<nav class="ui  attached segment m-padded-tb-mini m-shadow-small">
 				<div class="ui container">
