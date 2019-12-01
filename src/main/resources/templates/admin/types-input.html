@@ -60,11 +60,11 @@
 			<!-- 主体 -->
 			<div class="m-container-small m-padded-tb-big">
 				<div class="ui container">
-					<form action="#" method="post" th:action="@{/admin/types}" class="ui form">
+					<form action="#" method="post" th:action="@{/admin/types}" th:object="${type}" class="ui form">
 						<div class="required field">
 							<div class="ui left labeled input">
 								<label class="ui teal basic label">名称</label>
-								<input type="text" name="name" placeholder="分类名称">
+								<input th:value="*{name}" type="text" name="name" placeholder="分类名称">
 							</div>
 						</div>
 

@@ -28,40 +28,60 @@ public class TypeController {
     @Autowired
     private TypeService typeService;
 
-    @GetMapping("types")
-    public String types(@PageableDefault(size = 4,sort = {"id"},direction = Sort.Direction.DESC)
+    @GetMapping("/types")
+    public String types(@PageableDefault(size = 10,sort = {"id"},direction = Sort.Direction.DESC)
                                     Pageable pageable, Model model){
 
         model.addAttribute("page",typeService.listType(pageable));
 
         return "admin/types";
     }
-
     @GetMapping("/types/input")
-    public String input(){
+    public String input(Model model){
+
+        model.addAttribute("type",new Type());
+        return "admin/types-input";
+    }
+
+
+    //编辑
+    @GetMapping("/types/{id}/input")
+    public String editInput(@PathVariable Long id,Model model){
+        model.addAttribute("type",typeService.getType(id));
 
         return "admin/types-input";
     }
 
-    @PostMapping("/types")
-    public String post(Type type, BindingResult result, RedirectAttributes attributes){
-
-//        Type type1 = typeService.getTypeByName(type.getName());
-//        if(type1 !=null){
-//            result.rejectValue("name","nameError","该分类已经存在");
-//        }
-
-        Type t = typeService.saveType(type);
-        if (t != null){
-            //
-            attributes.addFlashAttribute("message","添加成功");
-
+    @PostMapping("/types/{id}/input")
+    public String editPost(Type type,RedirectAttributes attributes){
+        Type type1 = typeService.getTypeByName(type.getName());
+        if(type1 !=null){
+            attributes.addFlashAttribute("message","已存在相同分类");
         }else {
-            //
-            attributes.addFlashAttribute("message","添加失败");
+            typeService.updateType(type.getId(),type);
+            attributes.addFlashAttribute("message","更新成功");
         }
         return "redirect:/admin/types";
     }
+
+
+    @PostMapping("/types")
+    public String post(Type type,RedirectAttributes attributes){
+
+
+        Type t = typeService.getTypeByName(type.getName());
+        if (t != null){
+            //
+            attributes.addFlashAttribute("message","错误：已存在相同分类");
+
+        }else {
+            //
+            typeService.saveType(t);
+            attributes.addFlashAttribute("message","添加成功");
+        }
+        return "redirect:/admin/types";
+    }
+
 
     //删除分类
     @GetMapping("/types/{id}/delete")
