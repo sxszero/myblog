@@ -48,6 +48,10 @@ public class Blog {
     @ManyToMany(cascade = CascadeType.PERSIST)
     private List<Tag> tags = new ArrayList<>();
 
+    //多的一方是关系维护方，少的一方是关系被维护方，关系被维护方 添加mappedBy
+    @OneToMany(mappedBy = "blog")
+    private List<Comment> comments = new ArrayList<>();
+
     @ManyToOne
     private User user;
 
@@ -172,6 +176,22 @@ public class Blog {
 
     public void setTags(List<Tag> tags) {
         this.tags = tags;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
     }
 
     @Override
