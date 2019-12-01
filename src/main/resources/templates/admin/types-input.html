@@ -60,8 +60,8 @@
 			<!-- 主体 -->
 			<div class="m-container-small m-padded-tb-big">
 				<div class="ui container">
-					<form action="#" method="post" class="ui form">
-						<div class="field">
+					<form action="#" method="post" th:action="@{/admin/types}" class="ui form">
+						<div class="required field">
 							<div class="ui left labeled input">
 								<label class="ui teal basic label">名称</label>
 								<input type="text" name="name" placeholder="分类名称">
@@ -69,12 +69,21 @@
 						</div>
 
 						<div class="ui error message">
-							
+						<!--
+						<div class="ui negative message" th:if="${#fields.hasErrors('name')}">
+								<i class="close icon">
+									<div class="header">验证失败</div>
+									<p th:errors="*{name}">提交信息不符合规范</p>
+								</i>
+						</div>
+
+						-->
+
 						</div>
 						
 						<div class="ui right aligned container">
 							<button type="button"  class="ui button" onclick="window.history.go(-1)">返回</button>
-							<button class="ui teal button">提交</button>
+							<button class="ui teal submit button">提交</button>
 							
 						</div>
 						
@@ -150,10 +159,10 @@
 			$('.ui.form').form({
 				fields:{
 					title:{
-						identifier: 'title',
+						identifier: 'name',
 						rules:[{
 							type: 'empty',
-							prompt: '标题: 请输入博客标题'
+							prompt: '请输入分类名称'
 						}]
 					}
 				}

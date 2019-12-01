@@ -1,5 +1,6 @@
 package com.sxsduki.blog.pojo;
 
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +15,7 @@ public class Type {
     @Id
     @GeneratedValue
     private Long id;
+
     private String name;
 
     @OneToMany(mappedBy = "type")
