@@ -44,7 +44,7 @@ public class TypeController {
     }
 
 
-    //编辑
+    //点击编辑后得到该id的值
     @GetMapping("/types/{id}/input")
     public String editInput(@PathVariable Long id,Model model){
         model.addAttribute("type",typeService.getType(id));
@@ -52,19 +52,35 @@ public class TypeController {
         return "admin/types-input";
     }
 
-    @PostMapping("/types/{id}/input")
-    public String editPost(Type type,RedirectAttributes attributes){
-        Type type1 = typeService.getTypeByName(type.getName());
+    //编辑后提交 更新分类的实现
+    @PostMapping("/types/{id}")
+    public String editPost(@Valid Type type,BindingResult result,RedirectAttributes attributes){
+//        Type type1 = typeService.getTypeByName(type.getName());
+//        if(type1 !=null){
+//            attributes.addFlashAttribute("message","更新失败：已存在相同分类");
+//        }else {
+//            typeService.updateType(type.getId(),type);
+//            attributes.addFlashAttribute("message","更新成功");
+//        }
+//        return "redirect:/admin/types";
+        Type type1= typeService.getTypeByName(type.getName());
         if(type1 !=null){
-            attributes.addFlashAttribute("message","已存在相同分类");
+            result.rejectValue("name","nameError","该分类已经存在");
+        }
+        if(result.hasErrors()){
+            return "admin/types-input";
+        }
+        Type t =typeService.updateType(type.getId(),type);
+        if(t==null){
+            attributes.addFlashAttribute("message","更新失败");
         }else {
-            typeService.updateType(type.getId(),type);
             attributes.addFlashAttribute("message","更新成功");
         }
         return "redirect:/admin/types";
     }
 
 
+    //点击新增后 新增分类的实现
     @PostMapping("/types")
     public String post(Type type,RedirectAttributes attributes){
 
@@ -72,7 +88,7 @@ public class TypeController {
         Type t = typeService.getTypeByName(type.getName());
         if (t != null){
             //
-            attributes.addFlashAttribute("message","错误：已存在相同分类");
+            attributes.addFlashAttribute("message","添加失败：已存在相同分类");
 
         }else {
             //

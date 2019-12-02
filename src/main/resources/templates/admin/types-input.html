@@ -60,7 +60,8 @@
 			<!-- 主体 -->
 			<div class="m-container-small m-padded-tb-big">
 				<div class="ui container">
-					<form action="#" method="post" th:action="@{/admin/types}" th:object="${type}" class="ui form">
+					<form action="#" method="post" th:object="${type}" th:action="*{id}==null ? @{/admin/types} : @{/admin/types/{id}(id=*{id})}" class="ui form">
+						<input type="hidden" name="id" th:value="*{id}">
 						<div class="required field">
 							<div class="ui left labeled input">
 								<label class="ui teal basic label">名称</label>
@@ -68,25 +69,22 @@
 							</div>
 						</div>
 
-						<div class="ui error message">
-						<!--
+						<div class="ui error message"></div>
+						<!--/*/
 						<div class="ui negative message" th:if="${#fields.hasErrors('name')}">
-								<i class="close icon">
-									<div class="header">验证失败</div>
-									<p th:errors="*{name}">提交信息不符合规范</p>
-								</i>
+								<i class="close icon"></i>
+								<div class="header">验证失败</div>
+								<p th:errors="*{name}">提交信息不符合规范</p>
 						</div>
 
-						-->
+						/*/-->
 
-						</div>
-						
 						<div class="ui right aligned container">
 							<button type="button"  class="ui button" onclick="window.history.go(-1)">返回</button>
 							<button class="ui teal submit button">提交</button>
 							
 						</div>
-						
+
 					
 					</form>
 
