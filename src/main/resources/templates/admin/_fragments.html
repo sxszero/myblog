@@ -23,14 +23,14 @@
             <a class="ui teal item">
                 <h2 class="ui teal header">管理后台</h2>
             </a>&nbsp;
-            <a href="#" th:href="@{/admin/blogs}" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="fas fa-carrot"></i>首页</a>
+            <a href="#" th:href="@{/admin/blogs}" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="fas fa-carrot"></i>博客</a>
             <a href="#" th:href="@{/admin/types}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="fas fa-ice-cream"></i>分类</a>
             <a href="#" th:href="@{/admin/tags}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="fas fa-candy-cane"></i>标签</a>
             <div class="right m-item m-mobile-hide menu">
                 <div class="ui dropdown item">
                     <div class="text">
-                        <img src="https://sxsduki.oss-cn-beijing.aliyuncs.com/static/back.jpg" alt="" class="ui avatar image" th:src="@{${session.user.avatar}} style="width: 30px;height: 40px;">
-                        <span th:text="${session.user.nickname}">sxsduki</span>
+                        <img src="https://sxsduki.oss-cn-beijing.aliyuncs.com/static/back.jpg" alt="" class="ui avatar image" th:src="@{${session.user.avatar}}" style="width: 30px; height: 40px;">
+                        <span th:text="${session.user.nickname}">sxs</span>
                     </div>
                     <i class="dropdown icon"></i>
                     <div class="menu">
@@ -92,11 +92,6 @@
 <th:block th:fragment="script">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
-    <script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
-    <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
-    <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
-    <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
 </th:block>
 
 
