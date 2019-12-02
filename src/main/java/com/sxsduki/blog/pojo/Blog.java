@@ -25,15 +25,15 @@ public class Blog {
     //浏览次数
     private Integer views;
     //赞赏是否开启
-    private Boolean appreciation;
+    private boolean appreciation;
     //转载声明是否开启
-    private Boolean shareStatement;
+    private boolean shareStatement;
     //评论是否开启
-    private Boolean commentabled;
+    private boolean commentabled;
     //发布是否开启
-    private Boolean published;
+    private boolean published;
     //是否推荐
-    private Boolean recommend;
+    private boolean recommend;
     //创建时间
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
@@ -106,43 +106,43 @@ public class Blog {
         this.views = views;
     }
 
-    public Boolean getAppreciation() {
+    public boolean isAppreciation() {
         return appreciation;
     }
 
-    public void setAppreciation(Boolean appreciation) {
+    public void setAppreciation(boolean appreciation) {
         this.appreciation = appreciation;
     }
 
-    public Boolean getShareStatement() {
+    public boolean isShareStatement() {
         return shareStatement;
     }
 
-    public void setShareStatement(Boolean shareStatement) {
+    public void setShareStatement(boolean shareStatement) {
         this.shareStatement = shareStatement;
     }
 
-    public Boolean getCommentabled() {
+    public boolean isCommentabled() {
         return commentabled;
     }
 
-    public void setCommentabled(Boolean commentabled) {
+    public void setCommentabled(boolean commentabled) {
         this.commentabled = commentabled;
     }
 
-    public Boolean getPublished() {
+    public boolean isPublished() {
         return published;
     }
 
-    public void setPublished(Boolean published) {
+    public void setPublished(boolean published) {
         this.published = published;
     }
 
-    public Boolean getRecommend() {
+    public boolean isRecommend() {
         return recommend;
     }
 
-    public void setRecommend(Boolean recommend) {
+    public void setRecommend(boolean recommend) {
         this.recommend = recommend;
     }
 
