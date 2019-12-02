@@ -29,8 +29,8 @@
             <div class="right m-item m-mobile-hide menu">
                 <div class="ui dropdown item">
                     <div class="text">
-                        <img src="https://sxsduki.oss-cn-beijing.aliyuncs.com/static/back.jpg" alt="" class="ui avatar image" style="width: 30px;height: 40px;">
-                        sxsduki
+                        <img src="https://sxsduki.oss-cn-beijing.aliyuncs.com/static/back.jpg" alt="" class="ui avatar image" th:src="@{${session.user.avatar}} style="width: 30px;height: 40px;">
+                        <span th:text="${session.user.nickname}">sxsduki</span>
                     </div>
                     <i class="dropdown icon"></i>
                     <div class="menu">
