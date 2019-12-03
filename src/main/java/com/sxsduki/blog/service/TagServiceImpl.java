@@ -72,15 +72,15 @@ public class TagServiceImpl implements TagService {
 
     /**
      *
-     * @param ids 处理前端页面blogs-input传来的 ids
-     * @return 一组的tag对象
+     * @param ids 处理前端页面blogs-input传来的 1,2,3这种格式的 ids
+     * @return 一组的tag对象 1 2 3去掉逗号
      */
     @Transactional
     @Override
     public List<Tag> listTag(String ids) {//1,2,3这种格式的 ids
 
         List<Tag> list = new ArrayList<>();
-        if(!"".equals(ids)&&ids !=null){
+        if(!"".equals(ids) && ids != null){
             String[] idarray = ids.split(",");
             for (int i = 0;i<idarray.length;i++){
                 long tempId = Long.parseLong(idarray[i]);
