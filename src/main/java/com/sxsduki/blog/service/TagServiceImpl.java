@@ -69,21 +69,27 @@ public class TagServiceImpl implements TagService {
         return tagRepository.findAll();
     }
 
+
+    /**
+     *
+     * @param ids 处理前端页面blogs-input传来的 ids
+     * @return 一组的tag对象
+     */
     @Transactional
     @Override
-    public List<Tag> listTag(String ids) {
+    public List<Tag> listTag(String ids) {//1,2,3这种格式的 ids
 
-        List<Tag> tags = new ArrayList<>();
+        List<Tag> list = new ArrayList<>();
         if(!"".equals(ids)&&ids !=null){
             String[] idarray = ids.split(",");
             for (int i = 0;i<idarray.length;i++){
-                long temId = Long.parseLong(idarray[i]);
-                tags.add(tagRepository.getOne(temId));
+                long tempId = Long.parseLong(idarray[i]);
+                list.add(tagRepository.getOne(tempId));
             }
 
         }
 
-        return tags;
+        return list;
     }
 
     @Transactional

@@ -18,6 +18,9 @@ public class Blog {
     private Long id;
 
     private String title;
+
+    @Basic(fetch = FetchType.LAZY)
+    @Lob
     private String content;
     private String firstPicture;
     //标记 （原创/转载）
@@ -40,6 +43,11 @@ public class Blog {
     //更新时间
     @Temporal(TemporalType.TIMESTAMP)
     private Date updateTime;
+
+    @Transient
+    private String tagIds;
+
+//    private String description;
 
     @ManyToOne
     private Type type;
@@ -192,6 +200,14 @@ public class Blog {
 
     public void setComments(List<Comment> comments) {
         this.comments = comments;
+    }
+
+    public String getTagIds() {
+        return tagIds;
+    }
+
+    public void setTagIds(String tagIds) {
+        this.tagIds = tagIds;
     }
 
     @Override
