@@ -3,6 +3,7 @@ package com.sxsduki.blog.web.admin;
 import com.sxsduki.blog.pojo.Blog;
 import com.sxsduki.blog.pojo.BlogQuery;
 import com.sxsduki.blog.service.BlogService;
+import com.sxsduki.blog.service.TagService;
 import com.sxsduki.blog.service.TypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -25,10 +26,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class BlogController {
 
 
+
     @Autowired
     private BlogService blogService;
     @Autowired
     private TypeService typeService;
+    @Autowired
+    private TagService tagService;
 
     @GetMapping("/blogs")
     public String blogs(@PageableDefault(size = 2,sort = {"updateTime"},direction = Sort.Direction.DESC) Pageable pageable,
@@ -48,5 +52,17 @@ public class BlogController {
         model.addAttribute("page",blogService.listBlog(pageable,blog));
         return "admin/blogs :: blogList";//局部刷新
 
+    }
+
+    @GetMapping("/blogs/input")
+    public String input(Model model){
+
+        model.addAttribute("blog",new Blog());
+        //初始化分类，目的让页面动态获取分类的内容
+        model.addAttribute("types",typeService.listType());
+        model.addAttribute("tags",tagService.listTag());
+
+
+        return "admin/blogs-input";
     }
 }
