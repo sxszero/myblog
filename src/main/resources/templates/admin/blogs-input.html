@@ -84,8 +84,8 @@
 								<textarea name="content" placeholder="博客内容" style="display: none;" th:text="*{content}"></textarea>
 								
 							</div>
-							
 						</div>
+
 						<div class="two fields">
 							<div class="required field">
 								<div class="ui left labeled action input">
@@ -127,7 +127,9 @@
 								<input type="text" name="firstPicture" th:value="*{firstPicture}" placeholder="首图引用地址">
 							</div>
 						</div>
-						
+						<div class="required field">
+							<textarea name="description" th:text="*{description}" placeholder="博客描述..." maxlength="200"></textarea>
+						</div>
 						<div class="inline fields">
 							<div class="field">
 								<div class="ui checkbox">
@@ -276,7 +278,7 @@
                         identifier: 'description',
                         rules:[{
                             type: 'empty',
-                            prompt: '首图: 请输入博客描述'
+                            prompt: '描述: 请输入博客描述'
                         }]
                     }
 

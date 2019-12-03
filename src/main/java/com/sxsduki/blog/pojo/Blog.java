@@ -48,7 +48,7 @@ public class Blog {
     @Transient
     private String tagIds;
 
-//    private String description;
+    private String description;
 
     @ManyToOne
     private Type type;
@@ -241,6 +241,13 @@ public class Blog {
         this.tagIds = tagIds;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     @Override
     public String toString() {
@@ -258,6 +265,12 @@ public class Blog {
                 ", recommend=" + recommend +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
+                ", tagIds='" + tagIds + '\'' +
+                ", description='" + description + '\'' +
+                ", type=" + type +
+                ", tags=" + tags +
+                ", comments=" + comments +
+                ", user=" + user +
                 '}';
     }
 }

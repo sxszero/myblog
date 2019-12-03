@@ -5,6 +5,7 @@ import com.sxsduki.blog.dao.BlogRepository;
 import com.sxsduki.blog.pojo.Blog;
 import com.sxsduki.blog.pojo.BlogQuery;
 import com.sxsduki.blog.pojo.Type;
+import com.sxsduki.blog.utils.MyBeanUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -78,13 +79,15 @@ public class BlogServiceImpl implements BlogService {
     @Transactional
     @Override
     public Blog updateBlog(Long id, Blog blog) {
-        Blog blog1 = blogRepository.getOne(id);
-        if(blog1 == null){
+        Blog b = blogRepository.getOne(id);
+        if(b == null){
             throw new NotFoundException("该博客不存在");
         }
 
-        BeanUtils.copyProperties(blog1,blog);
-        return blogRepository.save(blog1);
+        //MyBeanUtils.getNullPropertyNames(blog)过滤掉blog表的空的属性值
+        BeanUtils.copyProperties(blog,b, MyBeanUtils.getNullPropertyNames(blog));
+        b.setUpdateTime(new Date());
+        return blogRepository.save(b);
     }
     @Transactional
     @Override
