@@ -1,6 +1,7 @@
 package com.sxsduki.blog.web.admin;
 
 import com.sxsduki.blog.pojo.Tag;
+import com.sxsduki.blog.pojo.Type;
 import com.sxsduki.blog.service.TagService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -8,6 +9,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -71,14 +73,25 @@ public class TagController {
 
     }
 
-    @PostMapping("/tag/{id}")
-    public String post(Tag tag,RedirectAttributes attributes){
+    @PostMapping("/tags/{id}")
+    public String post(Tag tag, BindingResult result, RedirectAttributes attributes){
+
+
+        //此处的会返回给标签修改页面 显示标签是否已经存在数据库中
         Tag tag1 = tagService.getTageByName(tag.getName());
         if (tag1 !=null){
-            attributes.addFlashAttribute("message","错误：该标签已经存在");
+            result.rejectValue("name","nameError","该标签已经存在");
+        }
+        if(result.hasErrors()){
+            return "admin/tags-input";
+        }
+
+        //此处的会返回给标签列表页面 二次确保标签不会重复添加和提示信息
+        Tag t = tagService.updateTage(tag.getId(),tag);
+        if(t == null){
+            attributes.addFlashAttribute("message","标签更新失败");
         }else {
-            tagService.updateTage(tag.getId(),tag);
-            attributes.addFlashAttribute("message","标签修改成功");
+            attributes.addFlashAttribute("message","标签更新成功");
         }
         return "redirect:/admin/tags";
 

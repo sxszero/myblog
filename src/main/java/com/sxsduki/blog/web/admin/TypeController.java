@@ -55,14 +55,8 @@ public class TypeController {
     //编辑后提交 更新分类的实现
     @PostMapping("/types/{id}")
     public String editPost(@Valid Type type,BindingResult result,RedirectAttributes attributes){
-//        Type type1 = typeService.getTypeByName(type.getName());
-//        if(type1 !=null){
-//            attributes.addFlashAttribute("message","更新失败：已存在相同分类");
-//        }else {
-//            typeService.updateType(type.getId(),type);
-//            attributes.addFlashAttribute("message","更新成功");
-//        }
-//        return "redirect:/admin/types";
+
+        //此处的会返回给分类修改页面 显示该分类是否已经存在数据库中
         Type type1= typeService.getTypeByName(type.getName());
         if(type1 !=null){
             result.rejectValue("name","nameError","该分类已经存在");
@@ -70,6 +64,7 @@ public class TypeController {
         if(result.hasErrors()){
             return "admin/types-input";
         }
+        //此处的会返回给分类列表页面 二次确保分类不会重复添加和提示信息
         Type t =typeService.updateType(type.getId(),type);
         if(t==null){
             attributes.addFlashAttribute("message","更新失败");
