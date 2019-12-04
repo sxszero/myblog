@@ -18,6 +18,9 @@ public interface TypeService{
 
     List<Type> listType();
 
+    //首页显示的几条type
+    List<Type> listTypeTop(Integer size);
+
     Type updateType(Long id,Type type);
 
     void deleteType(Long id);

@@ -6,7 +6,9 @@ import com.sxsduki.blog.pojo.Type;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -45,6 +47,19 @@ public class TypeServiceImpl implements TypeService {
     @Override
     public List<Type> listType() {
         return typeRepository.findAll();
+    }
+
+    /**
+     *
+     * @param size 设置index页面展示type的个数
+     * @return 按照大小倒叙排序的type列表
+     */
+    @Override
+    public List<Type> listTypeTop(Integer size) {
+        Sort sort = new Sort(Sort.Direction.DESC, "blogs.size");//排序方式
+        Pageable pageable = PageRequest.of(0,size,sort);
+
+        return typeRepository.findTop(pageable);
     }
 
     @Transactional

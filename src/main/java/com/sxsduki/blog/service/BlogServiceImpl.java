@@ -9,7 +9,9 @@ import com.sxsduki.blog.utils.MyBeanUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -33,6 +35,13 @@ public class BlogServiceImpl implements BlogService {
     public Blog getBlog(Long id) {
         return blogRepository.getOne(id);
     }
+
+    /**
+     * blogs页面调用 用于查询博客
+     * @param pageable
+     * @param blog
+     * @return
+     */
     @Transactional
     @Override
     public Page<Blog> listBlog(Pageable pageable, BlogQuery blog) {
@@ -60,6 +69,31 @@ public class BlogServiceImpl implements BlogService {
             }
         },pageable) ;
     }
+
+    /**
+     * 首页调用 分页使用
+     * @param pageable
+     * @return
+     */
+
+    @Transactional
+    @Override
+    public Page<Blog> listBlog(Pageable pageable) {
+        return blogRepository.findAll(pageable);
+    }
+
+    /**
+     * 首页展示推荐的博客
+     * @param size
+     * @return
+     */
+    @Override
+    public List<Blog> listRecommendBlogTop(Integer size) {
+        Sort sort = new Sort(Sort.Direction.DESC, "updateTime");
+        Pageable pageable = PageRequest.of(0,size,sort);
+        return blogRepository.findTop(pageable);
+    }
+
     @Transactional
     @Override
     public Blog saveBlog(Blog blog) {
