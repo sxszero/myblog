@@ -39,7 +39,7 @@ public class BlogController {
     private TagService tagService;
 
     @GetMapping("/blogs")
-    public String blogs(@PageableDefault(size = 2,sort = {"updateTime"},direction = Sort.Direction.DESC) Pageable pageable,
+    public String blogs(@PageableDefault(size = 6,sort = {"updateTime"},direction = Sort.Direction.DESC) Pageable pageable,
                         BlogQuery blog, Model model){
 
         //用于发送给前端页面 type的数据 用于动态获取type的数据
