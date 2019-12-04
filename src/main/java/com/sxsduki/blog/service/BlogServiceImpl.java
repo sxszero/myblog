@@ -5,6 +5,7 @@ import com.sxsduki.blog.dao.BlogRepository;
 import com.sxsduki.blog.pojo.Blog;
 import com.sxsduki.blog.pojo.BlogQuery;
 import com.sxsduki.blog.pojo.Type;
+import com.sxsduki.blog.utils.MarkDownUtils;
 import com.sxsduki.blog.utils.MyBeanUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +35,28 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Blog getBlog(Long id) {
         return blogRepository.getOne(id);
+    }
+
+    /**
+     * 把blog的内容转换成html格式
+     * @param id
+     * @return
+     */
+    @Transactional
+    @Override
+    public Blog getAndConvert(Long id) {
+
+        Blog blog = blogRepository.getOne(id);
+        if (blog == null){
+            throw new NotFoundException("该博客不存在");
+        }
+        //为了保持原有数据库内容不改变 新建一个blog对象来临时保存信息 避免content变为html格式存入数据库
+        Blog b =new Blog();
+        BeanUtils.copyProperties(blog,b);
+        String content = b.getContent();
+        b.setContent(MarkDownUtils.markdownToHtmlExtensions(content));
+
+        return b;
     }
 
     /**
