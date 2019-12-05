@@ -3,7 +3,7 @@
 	<head th:replace="_fragments :: head(~{::title})">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>分类</title>
+		<title>搜索结果</title>
 		<link rel="icon" type="image/x-icon" href="https://sxsduki.oss-cn-beijing.aliyuncs.com/static/back.jpg">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -16,7 +16,7 @@
 
 		<div class="app">
 			<!-- 导航 -->
-			<nav th:replace="_fragments :: menu(2)" class="ui  attached segment m-padded-tb-mini m-shadow-small">
+			<nav th:replace="_fragments :: menu(1)" class="ui  attached segment m-padded-tb-mini m-shadow-small">
 				<div class="ui container">
 					<div class="ui  secondary stackable menu">
 						<a class="teal item">
@@ -24,8 +24,8 @@
 							&nbsp;&nbsp;&nbsp;blog
 						</a>&nbsp;
 						<a href="index.html" class="m-item item m-mobile-hide"><i class="fas fa-carrot"></i>首页</a>
-						<a href="#" class="active m-item item m-mobile-hide"><i class="fas fa-ice-cream"></i>分类</a>
-						<a href="#" class="m-item item m-mobile-hide"><i class="fas fa-candy-cane"></i>标签</a>
+						<a href="#" class="m-item item m-mobile-hide"><i class="fas fa-ice-cream"></i>分类</a>
+						<a href="#" class="active m-item item m-mobile-hide"><i class="fas fa-candy-cane"></i>标签</a>
 						<a href="#" class="m-item item m-mobile-hide"><i class="fas fa-pizza-slice"></i>归档</a>
 						<a href="#" class="m-item item m-mobile-hide"><i class="fas fa-fish"></i>友链</a>
 						<a href="#" class="m-item item m-mobile-hide"><i class="fas fa-seedling"></i>关于我</a>
@@ -50,21 +50,13 @@
 					<div class="ui top attached segment">
 						<div class="ui middle aligned two column grid">
 							<div class="column">
-								<h3 class="ui teal header">分类</h3>
+								<h3 class="ui teal header">搜索结果</h3>
 							</div>
 							<div class="right aligned column">
-								共<h2 class="ui orange header m-inline-block m-text-thin" th:text="${#arrays.length(types)}">14</h2>个
+								共<h2 class="ui orange header m-inline-block m-text-thin" th:text="${page.totalElements}">14</h2>个
 							</div>
 						</div>
 					</div>
-					<div class="ui attached segment m-padded-tb-large">
-						<div class="ui labeled button m-margin-tb-tiny" th:each="type : ${types}">
-							<a href="" th:href="@{/types/{id}(id=${type.id})}" class="ui basic button" th:classappend="${type.id==activeTypeId} ? 'teal'" th:text="${type.name}">思考与感悟</a>
-							<div class="ui basic left pointing label" th:classappend="${type.id==activeTypeId} ? 'teal'" th:text="${#arrays.length(type.blogs)}">24</div>
-						</div>
-
-					</div>
-				
 					<div class="ui teal top attached segment">
 						<div class="ui padded vertical segment m-padded-tb-large" th:each="blog : ${page.content}">
 							<div class="ui middle aligned mobile reversed stackable grid">
@@ -107,7 +99,6 @@
 								</div>
 							</div>
 						</div>
-						
 					</div>
 
 					<div class="ui bottom attached segment" th:if="${page.totalPages} > 1">
@@ -122,6 +113,14 @@
 					</div>
 				</div>
 			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
 			<!-- 底部 -->
 			<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
 				<div class="ui center aligned container">
@@ -162,11 +161,11 @@
 
 			</footer>
 		</div>
+
 		<!--/*/<th:block th:replace="_fragments :: script">/*/-->
 			<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 			<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
 		<!--/*/</th:block>/*/-->
-
 		<script type="text/javascript">
 			<!--小屏幕时点击隐藏或展开导航栏-->
 			$('.menu.toggle').click(function() {

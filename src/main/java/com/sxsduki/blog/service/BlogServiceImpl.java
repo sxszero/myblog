@@ -108,8 +108,13 @@ public class BlogServiceImpl implements BlogService {
         return blogRepository.findAll(pageable);
     }
 
+    @Override
+    public Page<Blog> listBlog(String query, Pageable pageable) {
+        return blogRepository.findByQuery(query,pageable);
+    }
+
     /**
-     * 首页展示推荐的博客
+     * 首页展示推荐的博客的条数
      * @param size
      * @return
      */
