@@ -5,3 +5,4 @@ spring:
     active: dev
 
 
+comment.avatar: /image/avatar.jpg
