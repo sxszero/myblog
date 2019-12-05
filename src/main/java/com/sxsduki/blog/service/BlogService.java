@@ -16,6 +16,9 @@ public interface BlogService {
 
     Page<Blog> listBlog(Pageable pageable);
 
+    //tags页面使用 关联表的查询
+    Page<Blog> listBlog(Long tagId,Pageable pageable);
+
     Page<Blog> listBlog(String query,Pageable pageable);
 
     List<Blog> listRecommendBlogTop(Integer size);
