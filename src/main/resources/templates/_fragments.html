@@ -29,7 +29,7 @@
             <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="fas fa-candy-cane"></i>标签</a>
             <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="fas fa-pizza-slice"></i>归档</a>
             <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="fas fa-fish"></i>友链</a>
-            <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==6} ? 'active'"><i class="fas fa-seedling"></i>关于我</a>
+            <a href="#" th:href="@{/aboutme}" class="m-item item m-mobile-hide" th:classappend="${n==6} ? 'active'"><i class="fas fa-seedling"></i>关于我</a>
             <div class="right m-item item m-mobile-hide">
                 <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
                     <div class="ui icon  transparent input">
@@ -61,17 +61,17 @@
             </div>
             <div class="three wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
-                <div class="ui inverted link list">
-                    <a href="#" class="item">用户故事(User Story)</a>
-                    <a href="#" class="item">用户故事(User Story)</a>
-                    <a href="#" class="item">用户故事(User Story)</a>
+                <div id="newblog-container">
+                    <div class="ui inverted link list" th:fragment="newblogList">
+                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item" th:each="blog : ${newblogs}"><span th:text="${blog.title}">用户故事(User Story)</span></a>
+                    </div>
                 </div>
             </div>
             <div class="three wide column">
                 <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
                 <div class="ui inverted link list">
-                    <a href="#" class="item">Email：1075424437@qq.com</a>
-                    <a href="#" class="item">QQ：1075424437</a>
+                    <a href="#" class="item" th:text="#{index.email}"></a>
+                    <a href="#" class="item" th:text="#{index.QQ}"></a>
 
                 </div>
             </div>
@@ -96,6 +96,10 @@
     <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
     <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
     <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+
+    <script>
+        $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+    </script>
 </th:block>
 
 

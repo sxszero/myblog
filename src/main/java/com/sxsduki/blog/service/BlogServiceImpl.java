@@ -124,7 +124,7 @@ public class BlogServiceImpl implements BlogService {
     }
 
     /**
-     * 首页展示推荐的博客的条数
+     * 首页展示推荐的博客的条数 footer中的3条标题也使用此
      * @param size
      * @return
      */

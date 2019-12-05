@@ -85,27 +85,30 @@
 							<div class="ui basic teal left pointing label" th:each="tag : ${blog.tags}" th:text="${tag.name}">方法论</div>
 						</div>
 						<!-- 赞赏 -->
-						<div class="ui center aligned basic segment">
-							<button id="payButton" class="ui basic orange circular button">赞赏</button>
-						</div>
-						<div class="ui payQR flowing popup transition hidden">
-							<div class="ui basic orange label">
-								<div class="ui images" style="font-size: inherit !important;">
-									<div class="image">
-										<img src="../static/image/mmqrcode1574749973626.png" th:src="@{/image/mmqrcode1574749973626.png}" alt="" class="ui rounded bordered image" style="width: 120px;">
-										<div>支付宝</div>
-									</div>
-									<div class="image">
-										<img src="../static/image/mmqrcode1574749973626.png" th:src="@{/image/mmqrcode1574749973626.png}" alt="" class="ui rounded bordered image" style="width: 120px;">
-										<div>微信</div>
+						<div th:if="${blog.appreciation}">
+							<div class="ui center aligned basic segment">
+								<button id="payButton" class="ui basic orange circular button">赞赏</button>
+							</div>
+							<div class="ui payQR flowing popup transition hidden">
+								<div class="ui basic orange label">
+									<div class="ui images" style="font-size: inherit !important;">
+										<div class="image">
+											<img src="../static/image/mmqrcode1574749973626.png" th:src="@{/image/mmqrcode1574749973626.png}" alt="" class="ui rounded bordered image" style="width: 120px;">
+											<div>支付宝</div>
+										</div>
+										<div class="image">
+											<img src="../static/image/mmqrcode1574749973626.png" th:src="@{/image/mmqrcode1574749973626.png}" alt="" class="ui rounded bordered image" style="width: 120px;">
+											<div>微信</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 
 
+
 					</div>
-					<div class="ui attached positive message">
+					<div class="ui attached positive message" th:if="${blog.shareStatement}">
 						<!-- 博客信息 -->
 						<div class="ui middle aligned grid">
 							<div class="eleven wide column">
@@ -120,7 +123,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="ui bottom attached segment">
+					<div class="ui bottom attached segment" th:if="${blog.commentabled}">
 						<!-- 留言区域列表 -->
 						<div id="comment-container" class="ui teal segment">
 							<div th:fragment="commentList">
@@ -356,10 +359,10 @@
 				position: 'left center'
 			});
 			//本片文章二维码生成
-			var serurl="";
+			var serurl=/*[[#{blog.serurl}]]*/"";
 			var url =/*[[@{/blog/{id}(id=${blog.id})}]]*/"";
 			var qrcode = new QRCode("qrcode", {
-				text: url,
+				text: serurl+url,
 				width: 110,
 				height: 110,
 				colorDark: "#000000",
