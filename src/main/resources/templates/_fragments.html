@@ -27,9 +27,9 @@
             <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'" ><i class="fas fa-carrot"></i>首页</a>
             <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="fas fa-ice-cream"></i>分类</a>
             <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="fas fa-candy-cane"></i>标签</a>
-            <a href="#" th:href="@{/archives/-1}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="fas fa-pizza-slice"></i>归档</a>
+            <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="fas fa-pizza-slice"></i>归档</a>
             <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="fas fa-fish"></i>友链</a>
-            <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n==6} ? 'active'"><i class="fas fa-seedling"></i>关于我</a>
+            <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==6} ? 'active'"><i class="fas fa-seedling"></i>关于我</a>
             <div class="right m-item item m-mobile-hide">
                 <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
                     <div class="ui icon  transparent input">
