@@ -948,3 +948,845 @@ org.springframework.web.HttpRequestMethodNotSupportedException: Request method '
 2019-12-07 16:51:18.389  INFO 4764 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : /login
 2019-12-07 16:51:34.757  INFO 4764 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/userlogin', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginUserController.loginPage', args=[]}
 2019-12-07 16:51:34.757  INFO 4764 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-07 17:08:35.749  INFO 18956 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Starting BlogApplication on DESKTOP-2H3LM8S with PID 18956 (E:\biancheng\webStormWork\blog\target\classes started by 10754 in E:\biancheng\webStormWork\blog)
+2019-12-07 17:08:35.752 DEBUG 18956 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-12-07 17:08:35.753  INFO 18956 --- [restartedMain] com.sxsduki.blog.BlogApplication         : The following profiles are active: dev
+2019-12-07 17:08:35.905  INFO 18956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-07 17:08:35.905  INFO 18956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-07 17:08:36.631  INFO 18956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-07 17:08:36.721  INFO 18956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83ms. Found 6 repository interfaces.
+2019-12-07 17:08:37.081  INFO 18956 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$77d57bdd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-07 17:08:37.629  INFO 18956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-07 17:08:37.775  INFO 18956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-07 17:08:37.775  INFO 18956 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-07 17:08:37.784  INFO 18956 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\biancheng\IntelliJ IDEA 2019.2\jbr\\bin;E:\biancheng\IntelliJ IDEA 2019.2\jbr\\bin\server;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;E:\biancheng\Tools\apache-maven-3.6.1\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;E:\biancheng\Git\cmd;E:\biancheng\TortoiseGit\bin;C:\Users\10754\AppData\Local\Microsoft\WindowsApps;C:\Users\10754\AppData\Roaming\npm;.]
+2019-12-07 17:08:37.878  INFO 18956 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-07 17:08:37.878  INFO 18956 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1972 ms
+2019-12-07 17:08:38.039  INFO 18956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-07 17:08:38.040  WARN 18956 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-07 17:08:38.158  INFO 18956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-07 17:08:38.208  INFO 18956 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-07 17:08:38.262  INFO 18956 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-07 17:08:38.264  INFO 18956 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-07 17:08:38.382  INFO 18956 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-07 17:08:38.524  INFO 18956 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-07 17:08:39.357  INFO 18956 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 17:08:39.419  INFO 18956 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-07 17:08:39.758  INFO 18956 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-07 17:08:40.581  INFO 18956 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-07 17:08:40.632  WARN 18956 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-07 17:08:41.083  INFO 18956 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-07 17:08:41.333  INFO 18956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-07 17:08:41.336  INFO 18956 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Started BlogApplication in 6.403 seconds (JVM running for 7.848)
+2019-12-07 17:08:58.769  INFO 18956 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-07 17:08:58.769  INFO 18956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-07 17:08:58.789  INFO 18956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2019-12-07 17:08:58.835  INFO 18956 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 17:08:58.952  WARN 18956 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-07 17:08:58.965  WARN 18956 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-07 17:08:58.986  INFO 18956 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 17:08:59.980  INFO 18956 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 17:08:59.987  INFO 18956 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 17:09:06.030  INFO 18956 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-07 17:09:06.036  INFO 18956 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-07 17:09:11.891  INFO 18956 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.login', args=[sxs, 111111, org.apache.catalina.session.StandardSessionFacade@2fc71fc2, {}]}
+2019-12-07 17:09:11.904  INFO 18956 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-07 17:09:11.923  INFO 18956 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 17:09:11.937  INFO 18956 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 17:09:12.311  INFO 18956 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 17:09:12.319  INFO 18956 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 17:09:25.912  INFO 18956 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/logout', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.logout', args=[org.apache.catalina.session.StandardSessionFacade@2fc71fc2]}
+2019-12-07 17:09:25.913  INFO 18956 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/login
+2019-12-07 17:09:25.924  INFO 18956 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-07 17:09:25.924  INFO 18956 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-07 17:11:16.644  INFO 18956 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-07 17:11:16.645  INFO 18956 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-07 17:11:23.247  INFO 18956 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 17:11:23.272  INFO 18956 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 17:11:23.805  INFO 18956 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 17:11:23.812  INFO 18956 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 17:11:29.967  INFO 18956 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-07 17:11:29.967  INFO 18956 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-07 17:51:25.932  WARN 18956 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m47s602ms375µs600ns).
+2019-12-07 18:53:39.181  INFO 18956 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 18:53:39.241  INFO 18956 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 18:53:39.826  INFO 18956 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 18:53:39.834  INFO 18956 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 18:53:49.762  INFO 18956 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-07 18:53:49.762  INFO 18956 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-07 18:53:56.125  INFO 18956 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.login', args=[sxs, 111111, org.apache.catalina.session.StandardSessionFacade@34e75060, {}]}
+2019-12-07 18:53:56.129  INFO 18956 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-07 18:53:56.140  INFO 18956 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 18:53:56.156  INFO 18956 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 18:53:56.489  INFO 18956 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 18:53:56.496  INFO 18956 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 18:55:04.946  INFO 18956 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 18:55:04.964  INFO 18956 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 18:55:05.391  INFO 18956 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 18:55:05.399  INFO 18956 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 18:55:35.984  INFO 18956 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-07 18:55:35.985  INFO 18956 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-07 19:00:39.119  INFO 18956 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:00:39.137  INFO 18956 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:00:39.155 ERROR 18956 --- [http-nio-8080-exec-7] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-7] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Could not parse as expression: "/admin/index" (template: "_fragments" - line 49, col 37)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/admin/index" (template: "_fragments" - line 49, col 37)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 54 common frames omitted
+
+2019-12-07 19:00:39.161 ERROR 18956 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/admin/index" (template: "_fragments" - line 49, col 37)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-12-07 19:00:39.214 ERROR 18956 --- [http-nio-8080-exec-7] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-7] Exception processing template "error/500": An error happened during template parsing (template: "class path resource [templates/error/500.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error/500.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Could not parse as expression: "/admin/index" (template: "_fragments" - line 49, col 37)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 37 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/admin/index" (template: "_fragments" - line 49, col 37)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 39 common frames omitted
+
+2019-12-07 19:00:39.215 ERROR 18956 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/admin/index" (template: "_fragments" - line 49, col 37)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-12-07 19:00:39.216 ERROR 18956 --- [http-nio-8080-exec-7] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error/500.html]")
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1013)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error/500.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	... 26 common frames omitted
+Caused by: org.attoparser.ParseException: Could not parse as expression: "/admin/index" (template: "_fragments" - line 49, col 37)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 37 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/admin/index" (template: "_fragments" - line 49, col 37)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 39 common frames omitted
+
+2019-12-07 19:01:22.631  INFO 18956 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:01:22.643  INFO 18956 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:01:23.035  INFO 18956 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:01:23.040  INFO 18956 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:06:38.077  INFO 18956 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-07 19:06:38.082  INFO 18956 --- [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 19:06:38.092  INFO 18956 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-07 19:06:38.098  INFO 18956 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-07 19:06:38.832  INFO 18956 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Starting BlogApplication on DESKTOP-2H3LM8S with PID 18956 (E:\biancheng\webStormWork\blog\target\classes started by 10754 in E:\biancheng\webStormWork\blog)
+2019-12-07 19:06:38.832 DEBUG 18956 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-12-07 19:06:38.833  INFO 18956 --- [restartedMain] com.sxsduki.blog.BlogApplication         : The following profiles are active: dev
+2019-12-07 19:06:39.192  INFO 18956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-07 19:06:39.241  INFO 18956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 6 repository interfaces.
+2019-12-07 19:06:39.351  INFO 18956 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$77d57bdd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-07 19:06:39.606  INFO 18956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-07 19:06:39.608  INFO 18956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-07 19:06:39.608  INFO 18956 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-07 19:06:39.642  INFO 18956 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-07 19:06:39.642  INFO 18956 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 807 ms
+2019-12-07 19:06:39.833  INFO 18956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-12-07 19:06:39.858  WARN 18956 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-07 19:06:39.871  INFO 18956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-12-07 19:06:39.901  INFO 18956 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-07 19:06:39.984  INFO 18956 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-07 19:06:40.542  INFO 18956 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 19:06:40.612  INFO 18956 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-07 19:06:40.849  INFO 18956 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-07 19:06:41.899  INFO 18956 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-07 19:06:41.920  WARN 18956 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-07 19:06:42.024  INFO 18956 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-07 19:06:42.223  INFO 18956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-07 19:06:42.224  INFO 18956 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Started BlogApplication in 3.431 seconds (JVM running for 7088.743)
+2019-12-07 19:06:42.226  INFO 18956 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-12-07 19:06:48.808  INFO 18956 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-07 19:06:48.808  INFO 18956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-07 19:06:48.821  INFO 18956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-12-07 19:06:48.824  INFO 18956 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:06:48.850  WARN 18956 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-07 19:06:48.855  WARN 18956 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-07 19:06:48.864  INFO 18956 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:06:49.419  INFO 18956 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:06:49.424  INFO 18956 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:06:56.594  INFO 18956 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-07 19:06:56.598  INFO 18956 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-07 19:07:02.421  INFO 18956 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.login', args=[sxs, 111111, org.apache.catalina.session.StandardSessionFacade@4b29c829, {}]}
+2019-12-07 19:07:02.427  INFO 18956 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-07 19:07:02.445  INFO 18956 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:07:02.456  INFO 18956 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:07:02.863  INFO 18956 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:07:02.868  INFO 18956 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:12:35.942  INFO 18956 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:12:35.958  INFO 18956 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:12:36.547  INFO 18956 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:12:36.552  INFO 18956 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:12:39.685  INFO 18956 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/admin/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.admin', args=[]}
+2019-12-07 19:12:39.685  INFO 18956 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : admin/login
+2019-12-07 19:14:50.658  INFO 18956 --- [Thread-26] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-07 19:14:50.660  INFO 18956 --- [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 19:14:50.661  INFO 18956 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2019-12-07 19:14:50.676  INFO 18956 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2019-12-07 19:14:51.574  INFO 18956 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Starting BlogApplication on DESKTOP-2H3LM8S with PID 18956 (E:\biancheng\webStormWork\blog\target\classes started by 10754 in E:\biancheng\webStormWork\blog)
+2019-12-07 19:14:51.575 DEBUG 18956 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-12-07 19:14:51.575  INFO 18956 --- [restartedMain] com.sxsduki.blog.BlogApplication         : The following profiles are active: dev
+2019-12-07 19:14:51.910  INFO 18956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-07 19:14:51.945  INFO 18956 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34ms. Found 6 repository interfaces.
+2019-12-07 19:14:52.010  INFO 18956 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$77d57bdd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-07 19:14:52.227  INFO 18956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-07 19:14:52.232  INFO 18956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-07 19:14:52.233  INFO 18956 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-07 19:14:52.263  INFO 18956 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-07 19:14:52.263  INFO 18956 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 686 ms
+2019-12-07 19:14:52.379  INFO 18956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2019-12-07 19:14:52.380  WARN 18956 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-07 19:14:52.385  INFO 18956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2019-12-07 19:14:52.401  INFO 18956 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-07 19:14:52.465  INFO 18956 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-07 19:14:52.944  INFO 18956 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 19:14:52.999  INFO 18956 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-07 19:14:53.227  INFO 18956 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-07 19:14:53.696  INFO 18956 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-07 19:14:53.714  WARN 18956 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-07 19:14:53.817  INFO 18956 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-07 19:14:54.026  INFO 18956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-07 19:14:54.026  INFO 18956 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Started BlogApplication in 2.499 seconds (JVM running for 7580.545)
+2019-12-07 19:14:54.029  INFO 18956 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-12-07 19:15:05.467  INFO 18956 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-07 19:15:05.468  INFO 18956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-07 19:15:05.480  INFO 18956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-12-07 19:15:05.483  INFO 18956 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:15:05.503  WARN 18956 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-07 19:15:05.510  WARN 18956 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-07 19:15:05.518  INFO 18956 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:15:05.979  INFO 18956 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:15:05.984  INFO 18956 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:15:07.624  INFO 18956 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-07 19:15:07.628  INFO 18956 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-07 19:15:07.970  INFO 18956 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:15:07.976  INFO 18956 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:15:13.557  INFO 18956 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.login', args=[sxs, 111111, org.apache.catalina.session.StandardSessionFacade@7c7c45aa, {}]}
+2019-12-07 19:15:13.562  INFO 18956 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-07 19:15:13.588  INFO 18956 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:15:13.601  INFO 18956 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:15:13.894  INFO 18956 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:15:13.898  INFO 18956 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:15:32.444  INFO 18956 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/blog/41', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.blog', args=[41, {}]}
+2019-12-07 19:15:32.575  INFO 18956 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Result : blog
+2019-12-07 19:15:33.007  INFO 18956 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:15:33.012  INFO 18956 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:15:33.313  INFO 18956 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments/41', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.comments', args=[41, {}]}
+2019-12-07 19:15:33.354  INFO 18956 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-12-07 19:15:52.645  INFO 18956 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/blog/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.blog', args=[29, {}]}
+2019-12-07 19:15:52.654  INFO 18956 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : blog
+2019-12-07 19:15:52.996  INFO 18956 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:15:53.002  INFO 18956 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:15:53.186  INFO 18956 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.comments', args=[29, {}]}
+2019-12-07 19:15:53.205  INFO 18956 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-12-07 19:16:12.276  INFO 18956 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/management', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.admin', args=[]}
+2019-12-07 19:16:12.276  INFO 18956 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Result : admin/login
+2019-12-07 19:18:06.649  INFO 18956 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:18:06.662  INFO 18956 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:18:07.036  INFO 18956 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:18:07.041  INFO 18956 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:20:57.958  INFO 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Starting BlogApplication on DESKTOP-2H3LM8S with PID 22720 (E:\biancheng\webStormWork\blog\target\classes started by 10754 in E:\biancheng\webStormWork\blog)
+2019-12-07 19:20:57.963 DEBUG 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-12-07 19:20:57.964  INFO 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : The following profiles are active: dev
+2019-12-07 19:20:58.146  INFO 22720 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-07 19:20:58.147  INFO 22720 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-07 19:20:58.956  INFO 22720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-07 19:20:59.055  INFO 22720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92ms. Found 6 repository interfaces.
+2019-12-07 19:20:59.439  INFO 22720 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67ca4c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-07 19:21:00.129  INFO 22720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-07 19:21:00.253  INFO 22720 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-07 19:21:00.253  INFO 22720 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-07 19:21:00.260  INFO 22720 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\biancheng\IntelliJ IDEA 2019.2\jbr\\bin;E:\biancheng\IntelliJ IDEA 2019.2\jbr\\bin\server;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;E:\biancheng\Tools\apache-maven-3.6.1\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;E:\biancheng\Git\cmd;E:\biancheng\TortoiseGit\bin;C:\Users\10754\AppData\Local\Microsoft\WindowsApps;C:\Users\10754\AppData\Roaming\npm;.]
+2019-12-07 19:21:00.365  INFO 22720 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-07 19:21:00.365  INFO 22720 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2217 ms
+2019-12-07 19:21:00.554  INFO 22720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-07 19:21:00.556  WARN 22720 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-07 19:21:00.666  INFO 22720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-07 19:21:00.724  INFO 22720 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-07 19:21:00.813  INFO 22720 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-07 19:21:00.815  INFO 22720 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-07 19:21:00.985  INFO 22720 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-07 19:21:01.185  INFO 22720 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-07 19:21:02.286  INFO 22720 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 19:21:02.352  INFO 22720 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-07 19:21:02.720  INFO 22720 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-07 19:21:03.595  INFO 22720 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-07 19:21:03.652  WARN 22720 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-07 19:21:04.135  INFO 22720 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-07 19:21:04.473  INFO 22720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-07 19:21:04.477  INFO 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Started BlogApplication in 7.44 seconds (JVM running for 8.951)
+2019-12-07 19:22:17.313  INFO 22720 --- [Thread-15] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-07 19:22:17.316  INFO 22720 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 19:22:17.321  INFO 22720 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-07 19:22:17.327  INFO 22720 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-07 19:22:18.215  INFO 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Starting BlogApplication on DESKTOP-2H3LM8S with PID 22720 (E:\biancheng\webStormWork\blog\target\classes started by 10754 in E:\biancheng\webStormWork\blog)
+2019-12-07 19:22:18.216 DEBUG 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-12-07 19:22:18.216  INFO 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : The following profiles are active: dev
+2019-12-07 19:22:18.638  INFO 22720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-07 19:22:18.667  INFO 22720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 6 repository interfaces.
+2019-12-07 19:22:18.720  INFO 22720 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67ca4c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-07 19:22:18.860  INFO 22720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-07 19:22:18.860  INFO 22720 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-07 19:22:18.861  INFO 22720 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-07 19:22:18.889  INFO 22720 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-07 19:22:18.889  INFO 22720 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 670 ms
+2019-12-07 19:22:18.961  INFO 22720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-12-07 19:22:18.961  WARN 22720 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-07 19:22:18.965  INFO 22720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-12-07 19:22:18.977  INFO 22720 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-07 19:22:19.008  INFO 22720 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-07 19:22:19.314  INFO 22720 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 19:22:19.357  INFO 22720 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-07 19:22:19.479  INFO 22720 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-07 19:22:20.058  INFO 22720 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-07 19:22:20.078  WARN 22720 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-07 19:22:20.178  INFO 22720 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-07 19:22:20.379  INFO 22720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-07 19:22:20.380  INFO 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Started BlogApplication in 2.223 seconds (JVM running for 84.854)
+2019-12-07 19:22:20.382  INFO 22720 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-12-07 19:23:48.123  INFO 22720 --- [Thread-28] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-07 19:23:48.126  INFO 22720 --- [Thread-28] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 19:23:48.127  INFO 22720 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2019-12-07 19:23:48.130  INFO 22720 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2019-12-07 19:23:49.130  INFO 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Starting BlogApplication on DESKTOP-2H3LM8S with PID 22720 (E:\biancheng\webStormWork\blog\target\classes started by 10754 in E:\biancheng\webStormWork\blog)
+2019-12-07 19:23:49.130 DEBUG 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-12-07 19:23:49.131  INFO 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : The following profiles are active: dev
+2019-12-07 19:23:49.546  INFO 22720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-07 19:23:49.575  INFO 22720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 6 repository interfaces.
+2019-12-07 19:23:49.630  INFO 22720 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67ca4c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-07 19:23:49.774  INFO 22720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-07 19:23:49.775  INFO 22720 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-07 19:23:49.775  INFO 22720 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-07 19:23:49.792  INFO 22720 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-07 19:23:49.792  INFO 22720 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 657 ms
+2019-12-07 19:23:49.863  INFO 22720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2019-12-07 19:23:49.864  WARN 22720 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-07 19:23:49.867  INFO 22720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2019-12-07 19:23:49.877  INFO 22720 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-07 19:23:49.908  INFO 22720 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-07 19:23:50.189  INFO 22720 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 19:23:50.233  INFO 22720 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-07 19:23:50.340  INFO 22720 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-07 19:23:50.799  INFO 22720 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-07 19:23:50.817  WARN 22720 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-07 19:23:50.951  INFO 22720 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-07 19:23:51.143  INFO 22720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-07 19:23:51.144  INFO 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Started BlogApplication in 2.07 seconds (JVM running for 175.618)
+2019-12-07 19:23:51.147  INFO 22720 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-12-07 19:23:57.055  INFO 22720 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-07 19:23:57.056  INFO 22720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-07 19:23:57.072  INFO 22720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-12-07 19:23:57.111  INFO 22720 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:23:57.226  WARN 22720 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-07 19:23:57.240  WARN 22720 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-07 19:23:57.249  INFO 22720 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:23:58.130  INFO 22720 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:23:58.137  INFO 22720 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:23:59.893  INFO 22720 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-07 19:23:59.899  INFO 22720 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-07 19:24:00.434  INFO 22720 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:24:00.442  INFO 22720 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:24:06.308  INFO 22720 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.login', args=[sxs, 111111, org.apache.catalina.session.StandardSessionFacade@61d585fb, {}]}
+2019-12-07 19:24:06.321  INFO 22720 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-07 19:24:06.340  INFO 22720 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:24:06.355  INFO 22720 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:24:06.688  INFO 22720 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:24:06.693  INFO 22720 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:24:09.324  INFO 22720 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/management', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.admin', args=[]}
+2019-12-07 19:24:09.325  INFO 22720 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Result : admin/login
+2019-12-07 19:25:09.475  INFO 22720 --- [Thread-34] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-07 19:25:09.477  INFO 22720 --- [Thread-34] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 19:25:09.478  INFO 22720 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2019-12-07 19:25:09.484  INFO 22720 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2019-12-07 19:25:10.393  INFO 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Starting BlogApplication on DESKTOP-2H3LM8S with PID 22720 (E:\biancheng\webStormWork\blog\target\classes started by 10754 in E:\biancheng\webStormWork\blog)
+2019-12-07 19:25:10.394 DEBUG 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-12-07 19:25:10.394  INFO 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : The following profiles are active: dev
+2019-12-07 19:25:10.703  INFO 22720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-07 19:25:10.739  INFO 22720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36ms. Found 6 repository interfaces.
+2019-12-07 19:25:10.825  INFO 22720 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67ca4c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-07 19:25:11.121  INFO 22720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-07 19:25:11.122  INFO 22720 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-07 19:25:11.123  INFO 22720 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-07 19:25:11.144  INFO 22720 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-07 19:25:11.144  INFO 22720 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 748 ms
+2019-12-07 19:25:11.281  INFO 22720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2019-12-07 19:25:11.282  WARN 22720 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-07 19:25:11.289  INFO 22720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2019-12-07 19:25:11.305  INFO 22720 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-07 19:25:11.353  INFO 22720 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-07 19:25:11.769  INFO 22720 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 19:25:11.834  INFO 22720 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-07 19:25:12.005  INFO 22720 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-07 19:25:12.471  INFO 22720 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-07 19:25:12.490  WARN 22720 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-07 19:25:12.578  INFO 22720 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-07 19:25:12.774  INFO 22720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-07 19:25:12.775  INFO 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Started BlogApplication in 2.427 seconds (JVM running for 257.249)
+2019-12-07 19:25:12.777  INFO 22720 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-12-07 19:25:23.996  INFO 22720 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-07 19:25:23.997  INFO 22720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-07 19:25:24.011  INFO 22720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-12-07 19:25:24.014  INFO 22720 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:25:24.034  WARN 22720 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-07 19:25:24.040  WARN 22720 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-07 19:25:24.048  INFO 22720 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:25:24.493  INFO 22720 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:25:24.499  INFO 22720 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:25:25.759  INFO 22720 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-07 19:25:25.762  INFO 22720 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-07 19:25:26.111  INFO 22720 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:25:26.118  INFO 22720 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:25:31.775  INFO 22720 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.login', args=[sxs, 111111, org.apache.catalina.session.StandardSessionFacade@8a5cdbd, {}]}
+2019-12-07 19:25:31.781  INFO 22720 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-07 19:25:31.800  INFO 22720 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:25:31.813  INFO 22720 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:25:32.118  INFO 22720 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:25:32.123  INFO 22720 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:25:35.449  INFO 22720 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/management', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.admin', args=[]}
+2019-12-07 19:25:35.449  INFO 22720 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Result : admin/index
+2019-12-07 19:26:21.362  INFO 22720 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:26:21.403  INFO 22720 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:26:21.949  INFO 22720 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:26:21.956  INFO 22720 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:26:25.636  INFO 22720 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/logout', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.logout', args=[org.apache.catalina.session.StandardSessionFacade@8a5cdbd]}
+2019-12-07 19:26:25.636  INFO 22720 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/login
+2019-12-07 19:26:25.650  INFO 22720 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-07 19:26:25.650  INFO 22720 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-07 19:26:25.919  INFO 22720 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:26:25.925  INFO 22720 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:26:41.359  INFO 22720 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:26:41.374  INFO 22720 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:26:41.728  INFO 22720 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:26:41.734  INFO 22720 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:27:40.661  INFO 22720 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-07 19:27:40.663  INFO 22720 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-07 19:27:41.314  INFO 22720 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:27:41.324  INFO 22720 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:27:50.914  INFO 22720 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-07 19:27:50.914  INFO 22720 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-07 19:27:51.204  INFO 22720 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:27:51.209  INFO 22720 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:28:18.341  INFO 22720 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:28:18.362  INFO 22720 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:28:18.857  INFO 22720 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:28:18.863  INFO 22720 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:28:30.544  INFO 22720 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-07 19:28:30.544  INFO 22720 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-07 19:28:36.214  INFO 22720 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:28:36.220  INFO 22720 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:29:15.641  INFO 22720 --- [Thread-40] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-07 19:29:15.642  INFO 22720 --- [Thread-40] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 19:29:15.644  INFO 22720 --- [Thread-40] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2019-12-07 19:29:15.653  INFO 22720 --- [Thread-40] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2019-12-07 19:29:16.634  INFO 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Starting BlogApplication on DESKTOP-2H3LM8S with PID 22720 (E:\biancheng\webStormWork\blog\target\classes started by 10754 in E:\biancheng\webStormWork\blog)
+2019-12-07 19:29:16.634 DEBUG 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-12-07 19:29:16.634  INFO 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : The following profiles are active: dev
+2019-12-07 19:29:17.119  INFO 22720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-07 19:29:17.176  INFO 22720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 6 repository interfaces.
+2019-12-07 19:29:17.343  INFO 22720 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67ca4c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-07 19:29:17.560  INFO 22720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-07 19:29:17.560  INFO 22720 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-07 19:29:17.561  INFO 22720 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-07 19:29:17.577  INFO 22720 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-07 19:29:17.577  INFO 22720 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 940 ms
+2019-12-07 19:29:17.652  INFO 22720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2019-12-07 19:29:17.652  WARN 22720 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-07 19:29:17.656  INFO 22720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2019-12-07 19:29:17.666  INFO 22720 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-07 19:29:17.700  INFO 22720 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-07 19:29:17.951  INFO 22720 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 19:29:17.987  INFO 22720 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-07 19:29:18.105  INFO 22720 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-07 19:29:18.623  INFO 22720 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-07 19:29:18.644  WARN 22720 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-07 19:29:18.735  INFO 22720 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-07 19:29:18.955  INFO 22720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-07 19:29:18.956  INFO 22720 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Started BlogApplication in 2.37 seconds (JVM running for 503.43)
+2019-12-07 19:29:18.958  INFO 22720 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-12-07 19:29:24.682  INFO 22720 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-07 19:29:24.683  INFO 22720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-07 19:29:24.698  INFO 22720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-12-07 19:29:24.701  INFO 22720 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:29:24.722  WARN 22720 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-07 19:29:24.730  WARN 22720 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-07 19:29:24.737  INFO 22720 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:29:25.100  INFO 22720 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:29:25.105  INFO 22720 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:29:26.642  INFO 22720 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-07 19:29:26.648  INFO 22720 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-07 19:29:26.902  INFO 22720 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:29:26.907  INFO 22720 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:29:31.927  INFO 22720 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.login', args=[sxs, 111111, org.apache.catalina.session.StandardSessionFacade@c9ef5c2, {}]}
+2019-12-07 19:29:31.932  INFO 22720 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-07 19:29:31.949  INFO 22720 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:29:31.960  INFO 22720 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:29:32.272  INFO 22720 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:29:32.277  INFO 22720 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-07 19:29:35.169  INFO 22720 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/logout', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.logout', args=[org.apache.catalina.session.StandardSessionFacade@c9ef5c2]}
+2019-12-07 19:29:35.170  INFO 22720 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-07 19:29:35.180  INFO 22720 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-07 19:29:35.197  INFO 22720 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-07 19:29:35.520  INFO 22720 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-07 19:29:35.524  INFO 22720 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList

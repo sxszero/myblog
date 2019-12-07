@@ -18,13 +18,13 @@ import javax.servlet.http.HttpSession;
  */
 
 @Controller
-public class LoginUserController {
+public class LoginController {
 
     @Autowired
     private UserService userService;
 
 
-    @GetMapping("/userlogin")
+    @GetMapping("/login")
     public String loginPage(){
         return "/login";
     }
@@ -50,7 +50,13 @@ public class LoginUserController {
     @GetMapping("/logout")
     public String logout(HttpSession session){
         session.removeAttribute("user");
-        return "redirect:/userlogin";
+        return "redirect:/";
+    }
+
+
+    @GetMapping("/management")
+    public String admin(){
+        return "admin/index";
     }
 
 }
