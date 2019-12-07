@@ -43,56 +43,59 @@
         </nav>
 
 
-        <div class="ui stackable container">
+        <div class="m-container m-padded-tb-big">
+            <div class="ui stackable container">
 
-            <div class="ui stackable grid">
+                <div class="ui stackable grid">
 
-                <div class="eleven wide column">
+                    <div class="eleven wide column">
 
-                    <br>
-                    <br>
-                    <h3 class="ui header m-text"><i class="fas fa-users"></i>友情链接:</h3>
-                    <br>
-                    <div class="ui cards">
+                        <h3 class="ui header m-text"><i class="fas fa-users"></i>友情链接:</h3>
 
-                        <a href="#" th:href="@{${friend.linkweb}}" target="_blank" th:unless="${friend.vocation}=='企业'" class="teal card m-padded-tb-tiny" th:each="friend : ${friends}">
-                            <div class="content">
-                                <div class="ui grid">
-                                <div class="eight wide column">
-                                    <img src="https://sxsduki.oss-cn-beijing.aliyuncs.com/static/back.jpg" th:src="${friend.avatar}" alt="" class="ui rounded image">
-                                </div>
-                                <div class="middle aligned eight wide column">
-                                    <div class="header"><span th:text="${friend.nickname}">mikki</span></div>
-                                    <div>
-                                        <span class="meta" th:text="${friend.vocation}">大学生</span>
+                        <div class="ui cards">
+
+                            <a href="#" th:href="@{${friend.linkweb}}" target="_blank" th:unless="${friend.vocation}=='企业'" class="teal card m-padded-tb-tiny" th:each="friend : ${friends}">
+                                <div class="content">
+                                    <div class="ui grid">
+                                        <div class="eight wide column">
+                                            <img src="https://sxsduki.oss-cn-beijing.aliyuncs.com/static/back.jpg" th:src="${friend.avatar}" alt="" class="ui rounded image">
+                                        </div>
+                                        <div class="middle aligned eight wide column">
+                                            <div class="header"><span th:text="${friend.nickname}">mikki</span></div>
+                                            <div>
+                                                <span class="meta" th:text="${friend.vocation}">大学生</span>
+                                            </div>
+                                        </div>
+                                        <div class="description m-black">
+                                            <span th:text="${friend.description}">热爱生活，喜欢打游戏</span>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <div class="description m-black">
-                                    <span th:text="${friend.description}">热爱生活，喜欢打游戏</span>
+
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="five wide column">
+
+                        <h3 class="ui header m-text"><i class="fas fa-cloud"></i>喜欢的网站:</h3>
+
+                        <div class="ui cards">
+                            <a href="#" th:href="@{${friend.linkweb}}" target="_blank" th:if="${friend.vocation=='企业'}" class="black card m-padded-tb-tiny" th:each="friend : ${friends}">
+                                <div class="content">
+                                    <div   class="header" th:text="${friend.nickname}">哔哩哔哩</div>
+                                    <p th:text="${friend.description}">小破站</p>
                                 </div>
+                            </a>
 
-                            </div>
-                            </div>
+                        </div>
 
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="five wide column">
-                    <br>
-                    <br>
-                    <h3 class="ui header m-text"><i class="fas fa-cloud"></i>喜欢的网站:</h3>
-                    <br>
-                    <div class="ui cards">
-                        <a href="#" th:href="@{${friend.linkweb}}" target="_blank" th:if="${friend.vocation=='企业'}" class="black card m-padded-tb-tiny" th:each="friend : ${friends}">
-                            <div class="content">
-                                <div   class="header" th:text="${friend.nickname}">哔哩哔哩</div>
-                                <p th:text="${friend.description}">小破站</p>
-                            </div>
-                        </a>
 
                     </div>
+
+
 
 
                 </div>
@@ -101,9 +104,6 @@
 
 
             </div>
-
-
-
 
         </div>
 
