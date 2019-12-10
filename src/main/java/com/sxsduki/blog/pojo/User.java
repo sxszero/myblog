@@ -26,6 +26,8 @@ public class User {
     @Temporal(TemporalType.TIMESTAMP)
     private Date updateTime;
 
+    private String role;
+
     @OneToMany(mappedBy = "user")
     private List<Blog> blogs = new ArrayList<>();
 
@@ -111,6 +113,14 @@ public class User {
 
     public void setBlogs(List<Blog> blogs) {
         this.blogs = blogs;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 
     @Override

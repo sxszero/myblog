@@ -88,18 +88,19 @@
 				</div>
 
 			</nav>
-			<!-- 主体 --> 
-			<div class="m-container m-padded-tb-big">
+			<!-- 主体 -->
+			<div class="m-padded-tb-big">
 				<div class="ui container">
 					<!-- 广播和音乐盒 -->
 					<div class="ui stackable middle aligned grid animated lightSpeedIn">
-						<div class="left aligned thirteen wide column m-mobile-hide">
+						<div class="left aligned fourteen wide column m-mobile-hide">
 							<div class="ui basic raised segment m-padded-tb-small centerMessage">
 								<div class="ui teal header">
 									<div class="ui text shape m-inline-block">
 										<div class="sides">
 											<div class="ui side active m-text-spaced">
-												<span>They always need to have things to explained.</span>——————by&nbsp;&nbsp;<span> The Little Prince</span>
+												<span>They always need to have things to explained.</span>
+												——————<span> The Little Prince</span>
 											</div>
 											<div class="ui side m-text-spaced">
 													<span >哪有人喜欢孤独，只是不喜欢失望罢了。</span>
@@ -112,7 +113,7 @@
 							</div>
 						</div>
 
-						<div class="three wide column">
+						<div class="two wide column">
 							<div class="ui basic center aligned segment m-padded-tb-smaller">
 								<button id="sidebar-btn" class="ui mini  teal button">留言板</button>
 								<button id="music-btn" class="ui mini orange button">音乐盒</button>
@@ -122,8 +123,34 @@
 
 
 					<div class="ui stackable grid">
-						<!-- 左边部分 -->
-						<div class="eleven wide column">
+						<!--左边部分-->
+						<div class="three wide column">
+							<!--个人明信片-->
+
+							<div class="ui   link  card m-card-center">
+								<div class="image">
+									<img src="https://sxsduki.oss-cn-beijing.aliyuncs.com/static/myavatar.jpg">
+								</div>
+								<div class="content">
+									<a class="header" href="#aboutme">sxs</a>
+									<div class="meta">
+										<a style="">生活梦想家</a>
+									</div>
+									<div class=" description m-padded" style="font-family: 楷体;font-weight: 800 ;!important;">
+										唯有你也想见我，<br>
+										我们的见面才有意义。
+									</div>
+								</div>
+								<div class=" extra content">
+									<a href="#" target="_blank" class="ui circular icon button"><i class="github icon"></i></a>
+									<a href="#" target="_blank" class="ui circular icon button"><i class="fab fa-cuttlefish"></i></a>
+									<a href="#"  class="ui qq circular icon button" data-content="1075424437" data-position="bottom center"><i class="qq icon"></i></a>
+								</div>
+
+							</div>
+						</div>
+						<!-- 中间部分 -->
+						<div class="ten wide column">
 							<!-- header -->
 							<div class="ui top attached segment">
 								<div class="ui middle aligned two column grid">
@@ -194,7 +221,7 @@
 						</div>
 
 						<!-- 右边部分 -->
-						<div class="five wide column">
+						<div class="three wide column">
 							<!-- 分类 -->
 							<div class="ui segments">
 								<div class="ui secondary segment">
@@ -333,7 +360,8 @@
 			// 音乐盒展开按钮
 			$('#music-btn').click(function () {
 			    $('.ui.right.sidebar')
-			        .sidebar('toggle')
+						.sidebar('setting', 'transition', 'overlay')
+			        	.sidebar('toggle')
 			    ;
 			});
 			//留言板展开按钮绑定

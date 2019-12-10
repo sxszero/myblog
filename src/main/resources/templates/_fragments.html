@@ -46,7 +46,7 @@
                     </div>
                     <i class="dropdown icon"></i>
                     <div class="menu">
-                        <a href="#" th:href="@{/management}" class="item">管理后台</a>
+                        <a href="#" th:href="@{/management}" class="item" th:if="${session.user.role}=='ADMIN'">管理后台</a>
                         <a href="#" th:href="@{/logout}" class="item">注销</a>
                     </div>
 

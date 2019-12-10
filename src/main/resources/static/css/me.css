@@ -163,4 +163,10 @@ body{
 	.m-mobile-wide{
 		width: 100% !important;
 	}
+
+	.m-card-center{
+		left: 50%;
+		transform: translateX(-50%) !important;
+
+	}
 }
