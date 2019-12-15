@@ -45,7 +45,8 @@
 		
 		<!-- 侧边音乐盒 -->
 		<div class="ui right sidebar inverted vertical menu">
-			<audio id="audio" class="audio" controls="controls" loop="loop" preload="auto" src="https://sxsduki.oss-cn-beijing.aliyuncs.com/static/music/%E9%9B%A8%E6%99%B4%E3%82%8B%E3%82%8B.mp3"></audio>
+<!--			preload="auto"-->
+			<audio id="audio" class="audio" controls="controls" autoplay="autoplay" loop="loop" controlsList="nodownload" src="https://sxsduki.oss-cn-beijing.aliyuncs.com/static/music/Rain-%E7%A7%A6%E5%9F%BA%E5%8D%9A.mp3"></audio>
 			<a class="music-1" href="#">
 			    <div class="header item m-text-spaced m-padded-tb-big ">
 			        <span>1.Lemon-米津玄师</span>
@@ -54,6 +55,16 @@
 			<a class="music-2" href="#">
 				<div class="header item m-text-spaced m-padded-tb-big ">
 					<span>2.雨晴るる-ヨルシカ</span>
+				</div>
+			</a>
+			<a class="music-3" href="#">
+				<div class="header item m-text-spaced m-padded-tb-big ">
+					<span>2.Rain-秦基博</span>
+				</div>
+			</a>
+			<a class="music-4" href="#">
+				<div class="header item m-text-spaced m-padded-tb-big ">
+					<span>2.我要找到你-xun(易硕成)</span>
 				</div>
 			</a>
 
@@ -120,7 +131,7 @@
 
 						<div class="two wide column">
 							<div class="ui basic center aligned segment m-padded-tb-smaller">
-								<button id="sidebar-btn" class="ui mini  teal button">留言板</button>
+								<button id="sidebar-btn" class="ui mini  teal button" onclick="return confirm('功能还没实现...')">留言板</button>
 								<button id="music-btn" class="ui mini orange button">音乐盒</button>
 							</div>
 						</div>
@@ -339,6 +350,7 @@
 
 		<script type="text/javascript">
 			var audio = document.getElementsByTagName('audio')[0];
+			audio.volume = 0.4;
 			$('.music-1').click(function () {
 			    audio.src="https://sxsduki.oss-cn-beijing.aliyuncs.com/static/music/Lemon.mp3";
 			    audio.play();
@@ -346,6 +358,14 @@
 			$('.music-2').click(function () {
 			    audio.src="https://sxsduki.oss-cn-beijing.aliyuncs.com/static/music/%E9%9B%A8%E6%99%B4%E3%82%8B%E3%82%8B.mp3";
 			    audio.play();
+			});
+			$('.music-3').click(function () {
+				audio.src="https://sxsduki.oss-cn-beijing.aliyuncs.com/static/music/Rain-%E7%A7%A6%E5%9F%BA%E5%8D%9A.mp3";
+				audio.play();
+			});
+			$('.music-4').click(function () {
+				audio.src="https://sxsduki.oss-cn-beijing.aliyuncs.com/static/music/Xun%28%E6%98%93%E7%A1%95%E6%88%90%29%20-%20%E6%88%91%E8%A6%81%E6%89%BE%E5%88%B0%E4%BD%A0.mp3";
+				audio.play();
 			});
 
 			$('.qq').popup();
