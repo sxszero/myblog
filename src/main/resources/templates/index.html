@@ -94,17 +94,22 @@
 					<!-- 广播和音乐盒 -->
 					<div class="ui stackable middle aligned grid animated lightSpeedIn">
 						<div class="left aligned fourteen wide column m-mobile-hide">
-							<div class="ui basic raised segment m-padded-tb-small centerMessage">
+							<div class="ui basic raised segment m-padded-tb-small">
 								<div class="ui teal header">
 									<div class="ui text shape m-inline-block">
 										<div class="sides">
-											<div class="ui side active m-text-spaced">
-												<span>They always need to have things to explained.</span>
-												——————<span> The Little Prince</span>
+											<div class="ui side active m-text-spaced" style="width: 1000px;height: 40px;">
+												<span>时间的流逝是平等赋予每个人的疗愈，或许也是救赎。</span>
+												——————&nbsp;&nbsp;&nbsp;&nbsp;<span>太宰治</span>
 											</div>
-											<div class="ui side m-text-spaced">
-													<span >哪有人喜欢孤独，只是不喜欢失望罢了。</span>
-													——————<span>村上春树</span>
+<!--											<div class="ui side m-text-spaced" style="width: 1000px !important;height: 40px !important;">-->
+<!--													<span >哪有人喜欢孤独，只是不喜欢失望罢了。</span>————<span>村上春树</span>-->
+<!--											</div>-->
+											<div class="ui  side  ">
+												<div class="m-text-spaced" style="width: 1000px;height: 40px;">
+													<span>哪有人喜欢孤独，只是不喜欢失望罢了。</span>
+													——————&nbsp;&nbsp;&nbsp;&nbsp;<span>村上春树</span>
+												</div>
 											</div>
 
 										</div>
@@ -134,16 +139,16 @@
 								<div class="content">
 									<a class="header" href="#aboutme">sxs</a>
 									<div class="meta">
-										<a style="">生活梦想家</a>
+										<a style="">普通的大学生</a>
 									</div>
 									<div class=" description m-padded" style="font-family: 楷体;font-weight: 800 ;!important;">
-										唯有你也想见我，<br>
-										我们的见面才有意义。
+										无处安放的灵魂，<br>
+										他的归途在何方。
 									</div>
 								</div>
 								<div class=" extra content">
-									<a href="#" target="_blank" class="ui circular icon button"><i class="github icon"></i></a>
-									<a href="#" target="_blank" class="ui circular icon button"><i class="fab fa-cuttlefish"></i></a>
+									<a href="https://github.com/kl150666" target="_blank" class="ui circular icon button"><i class="github icon"></i></a>
+									<a href="#" target="_blank" class="ui circular icon button"><i class="weibo icon"></i></a>
 									<a href="#"  class="ui qq circular icon button" data-content="1075424437" data-position="bottom center"><i class="qq icon"></i></a>
 								</div>
 
@@ -342,8 +347,8 @@
 			    audio.src="https://sxsduki.oss-cn-beijing.aliyuncs.com/static/music/%E9%9B%A8%E6%99%B4%E3%82%8B%E3%82%8B.mp3";
 			    audio.play();
 			});
-			
-			
+
+			$('.qq').popup();
 			
 			<!--小屏幕时点击隐藏或展开导航栏-->
 			$('.menu.toggle').click(function() {

@@ -67,6 +67,15 @@
 									</div>
 								</div>
 								<button class="ui fluid large teal submit button">登录</button>
+								<br>
+								<div class="field">
+									<a href="#" th:href="@{/register}" target="_blank" class="ui teal animated button" tabindex="0">
+										<div class="visible content">没账号？</div>
+										<div class="hidden content">
+											去注册<i class="right arrow icon"></i>
+										</div>
+									</a>
+								</div>
 							</div>
 
 							<div class="ui error mini message"></div>
@@ -126,6 +135,11 @@
 	<!--/*/</th:block>/*/-->
 
 	<script>
+		<!--小屏幕时点击隐藏或展开导航栏-->
+		$('.menu.toggle').click(function() {
+			$('.m-item').toggleClass('m-mobile-hide');
+		});
+
 		$('.ui.form').form({
 			fields:{
 				username:{

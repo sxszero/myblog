@@ -20,16 +20,16 @@
 <nav th:fragment="menu(n)" class="ui  attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
         <div class="ui  secondary stackable menu">
-            <a class="teal item">
+            <a class="teal item" href="#" th:href="@{/}">
                 <img class="ui circular image" src="https://sxsduki.oss-cn-beijing.aliyuncs.com/static/back.jpg" style="width: 50px;height: 50px;">
-                &nbsp;&nbsp;&nbsp;blog
+                &nbsp;&nbsp;&nbsp;sxs的博客
             </a>&nbsp;
             <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'" ><i class="fas fa-carrot"></i>首页</a>
             <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="fas fa-ice-cream"></i>分类</a>
             <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="fas fa-candy-cane"></i>标签</a>
             <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="fas fa-pizza-slice"></i>归档</a>
             <a href="#" th:href="@{/friends}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="fas fa-fish"></i>友链</a>
-            <a href="#" th:href="@{/aboutme}" class="m-item item m-mobile-hide" th:classappend="${n==6} ? 'active'"><i class="fas fa-seedling"></i>关于我</a>
+            <a href="#" th:href="@{/blog/48}" class="m-item item m-mobile-hide" th:classappend="${n==6} ? 'active'"><i class="fas fa-seedling"></i>关于我</a>
             <div class="right m-item item m-mobile-hide">
                 <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
                     <div class="ui icon  transparent input">
@@ -57,7 +57,7 @@
                     <a href="#" th:href="@{/login}" class="ui right fluid orange button">登录</a>
                 </div>
                 <div class="middle aligned m-item m-mobile-hide">
-                    <a href="#" class="ui right fluid brown button">注册</a>
+                    <a href="#" th:href="@{/register}" class="ui right fluid brown button">注册</a>
                 </div>
             </div>
 

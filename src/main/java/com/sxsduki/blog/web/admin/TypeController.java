@@ -87,7 +87,7 @@ public class TypeController {
 
         }else {
             //
-            typeService.saveType(t);
+            typeService.saveType(type);
             attributes.addFlashAttribute("message","添加成功");
         }
         return "redirect:/admin/types";
