@@ -534,3 +534,352 @@ Caused by: java.lang.IllegalArgumentException: Target object must not be null
 2019-12-15 18:03:49.975  INFO 14704 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : register
 2019-12-15 18:03:50.226  INFO 14704 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
 2019-12-15 18:03:50.232  INFO 14704 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:13:31.037  INFO 14704 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:13:31.061  INFO 14704 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:13:31.393  INFO 14704 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:13:31.399  INFO 14704 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:23:04.404  INFO 17296 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Starting BlogApplication on DESKTOP-2H3LM8S with PID 17296 (E:\biancheng\webStormWork\blog\target\classes started by 10754 in E:\biancheng\webStormWork\blog)
+2019-12-15 18:23:04.412 DEBUG 17296 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-12-15 18:23:04.413  INFO 17296 --- [restartedMain] com.sxsduki.blog.BlogApplication         : The following profiles are active: dev
+2019-12-15 18:23:04.531  INFO 17296 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-15 18:23:04.533  INFO 17296 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-15 18:23:05.359  INFO 17296 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-15 18:23:05.476  INFO 17296 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108ms. Found 6 repository interfaces.
+2019-12-15 18:23:05.824  INFO 17296 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8d58a4df] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-15 18:23:06.373  INFO 17296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-15 18:23:06.489  INFO 17296 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-15 18:23:06.490  INFO 17296 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-15 18:23:06.496  INFO 17296 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\biancheng\IntelliJ IDEA 2019.2\jbr\\bin;E:\biancheng\IntelliJ IDEA 2019.2\jbr\\bin\server;F:\xshell\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;E:\biancheng\Tools\apache-maven-3.6.1\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;E:\biancheng\Git\cmd;E:\biancheng\TortoiseGit\bin;C:\Users\10754\AppData\Local\Microsoft\WindowsApps;C:\Users\10754\AppData\Roaming\npm;.]
+2019-12-15 18:23:06.585  INFO 17296 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-15 18:23:06.585  INFO 17296 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2052 ms
+2019-12-15 18:23:06.745  INFO 17296 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-15 18:23:06.747  WARN 17296 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-15 18:23:06.843  INFO 17296 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-15 18:23:06.895  INFO 17296 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-15 18:23:06.951  INFO 17296 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-15 18:23:06.953  INFO 17296 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-15 18:23:07.072  INFO 17296 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-15 18:23:07.211  INFO 17296 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-15 18:23:08.107  INFO 17296 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-15 18:23:08.170  INFO 17296 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-15 18:23:08.486  INFO 17296 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-15 18:23:09.209  INFO 17296 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-15 18:23:09.258  WARN 17296 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-15 18:23:09.752  INFO 17296 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-15 18:23:09.980  INFO 17296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-15 18:23:09.982  INFO 17296 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Started BlogApplication in 6.221 seconds (JVM running for 7.522)
+2019-12-15 18:24:49.320  INFO 17296 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-15 18:24:49.320  INFO 17296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-15 18:24:49.335  INFO 17296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-12-15 18:24:49.369  INFO 17296 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:24:49.515  WARN 17296 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-15 18:24:49.538  WARN 17296 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-15 18:24:49.554  INFO 17296 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:24:50.354  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:24:50.363  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:24:52.655  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/blog/48', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.blog', args=[48, {}]}
+2019-12-15 18:24:52.722  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : blog
+2019-12-15 18:24:53.040  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:24:53.048  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:24:53.176  INFO 17296 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments/48', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.comments', args=[48, {}]}
+2019-12-15 18:24:53.220  INFO 17296 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-12-15 18:24:59.574  INFO 17296 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/blog/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.blog', args=[29, {}]}
+2019-12-15 18:24:59.600  INFO 17296 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : blog
+2019-12-15 18:24:59.925  INFO 17296 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:24:59.933  INFO 17296 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:25:00.086  INFO 17296 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.comments', args=[29, {}]}
+2019-12-15 18:25:00.111  INFO 17296 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-12-15 18:37:03.564  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:37:03.583  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:37:03.940  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:37:03.949  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:37:07.348  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/blog/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.blog', args=[29, {}]}
+2019-12-15 18:37:07.356  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : blog
+2019-12-15 18:37:07.665  INFO 17296 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:37:07.671  INFO 17296 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:37:07.799  INFO 17296 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.comments', args=[29, {}]}
+2019-12-15 18:37:07.820  INFO 17296 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-12-15 18:37:14.086  INFO 17296 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-15 18:37:14.089  INFO 17296 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-15 18:37:14.358  INFO 17296 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:37:14.365  INFO 17296 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:37:24.483  INFO 17296 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.login', args=[sxs, 111111, org.apache.catalina.session.StandardSessionFacade@3ce24b36, {}]}
+2019-12-15 18:37:24.491  INFO 17296 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-15 18:37:24.509  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:37:24.524  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:37:24.891  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:37:24.897  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:37:29.638  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/blog/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.blog', args=[29, {}]}
+2019-12-15 18:37:29.649  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : blog
+2019-12-15 18:37:29.926  INFO 17296 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:37:29.932  INFO 17296 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:37:30.100  INFO 17296 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.comments', args=[29, {}]}
+2019-12-15 18:37:30.118  INFO 17296 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-12-15 18:37:47.446  INFO 17296 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/logout', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.logout', args=[org.apache.catalina.session.StandardSessionFacade@3ce24b36]}
+2019-12-15 18:37:47.446  INFO 17296 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-15 18:37:47.456  INFO 17296 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:37:47.480  INFO 17296 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:37:47.797  INFO 17296 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:37:47.802  INFO 17296 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:38:42.201  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-15 18:38:42.201  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-15 18:38:42.519  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:38:42.526  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:38:47.797  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.login', args=[测试, 111111, org.apache.catalina.session.StandardSessionFacade@3ce24b36, {}]}
+2019-12-15 18:38:47.799  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-15 18:38:47.806  INFO 17296 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:38:47.820  INFO 17296 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:38:48.130  INFO 17296 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:38:48.134  INFO 17296 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:39:05.626  INFO 17296 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/blog/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.blog', args=[29, {}]}
+2019-12-15 18:39:05.637  INFO 17296 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Result : blog
+2019-12-15 18:39:06.003  INFO 17296 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:39:06.009  INFO 17296 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:39:06.143  INFO 17296 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.comments', args=[29, {}]}
+2019-12-15 18:39:06.157  INFO 17296 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-12-15 18:39:21.688  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.post', args=[Comment{id=null, nickname='测试', email='3212664529@qq.com', content='测试', avatar='null', createTime=null}, org.apache.catalina.session.StandardSessionFacade@3ce24b36]}
+2019-12-15 18:39:21.718  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/comments/29
+2019-12-15 18:39:21.726  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.comments', args=[29, {}]}
+2019-12-15 18:39:21.742  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-12-15 18:39:29.514  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/logout', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.logout', args=[org.apache.catalina.session.StandardSessionFacade@3ce24b36]}
+2019-12-15 18:39:29.515  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-15 18:39:29.526  INFO 17296 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:39:29.542  INFO 17296 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:39:29.886  INFO 17296 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:39:29.891  INFO 17296 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:39:31.168  INFO 17296 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-15 18:39:31.169  INFO 17296 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-15 18:39:31.407  INFO 17296 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:39:31.412  INFO 17296 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:39:40.214  INFO 17296 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.login', args=[sxs, 111111, org.apache.catalina.session.StandardSessionFacade@3ce24b36, {}]}
+2019-12-15 18:39:40.217  INFO 17296 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-15 18:39:40.226  INFO 17296 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:39:40.242  INFO 17296 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:39:40.508  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:39:40.513  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:39:44.849  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/blog/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.blog', args=[29, {}]}
+2019-12-15 18:39:44.856  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : blog
+2019-12-15 18:39:45.151  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:39:45.156  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:39:45.280  INFO 17296 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.comments', args=[29, {}]}
+2019-12-15 18:39:45.296  INFO 17296 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-12-15 18:39:59.217  INFO 17296 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.post', args=[Comment{id=null, nickname='sxsduki', email='1075424437@qq.com', content='测试', avatar='null', createTime=null}, org.apache.catalina.session.StandardSessionFacade@3ce24b36]}
+2019-12-15 18:39:59.225  INFO 17296 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/comments/29
+2019-12-15 18:39:59.233  INFO 17296 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.comments', args=[29, {}]}
+2019-12-15 18:39:59.247  INFO 17296 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-12-15 18:40:21.037  INFO 17296 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/blog/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.blog', args=[29, {}]}
+2019-12-15 18:40:21.047  INFO 17296 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Result : blog
+2019-12-15 18:40:21.352  INFO 17296 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:40:21.357  INFO 17296 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:40:21.493  INFO 17296 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.comments', args=[29, {}]}
+2019-12-15 18:40:21.510  INFO 17296 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-12-15 18:40:46.632  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.post', args=[Comment{id=null, nickname='sxsduki', email='1075424437@qq.com', content='测试', avatar='null', createTime=null}, org.apache.catalina.session.StandardSessionFacade@3ce24b36]}
+2019-12-15 18:40:46.637  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/comments/29
+2019-12-15 18:40:46.644  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.comments', args=[29, {}]}
+2019-12-15 18:40:46.657  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-12-15 18:43:59.062  INFO 17296 --- [Thread-14] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-15 18:43:59.065  INFO 17296 --- [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-15 18:43:59.069  INFO 17296 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-15 18:43:59.073  INFO 17296 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-15 18:43:59.759  INFO 17296 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Starting BlogApplication on DESKTOP-2H3LM8S with PID 17296 (E:\biancheng\webStormWork\blog\target\classes started by 10754 in E:\biancheng\webStormWork\blog)
+2019-12-15 18:43:59.759 DEBUG 17296 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-12-15 18:43:59.759  INFO 17296 --- [restartedMain] com.sxsduki.blog.BlogApplication         : The following profiles are active: dev
+2019-12-15 18:44:00.249  INFO 17296 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-15 18:44:00.310  INFO 17296 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60ms. Found 6 repository interfaces.
+2019-12-15 18:44:00.372  INFO 17296 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8d58a4df] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-15 18:44:00.529  INFO 17296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-15 18:44:00.530  INFO 17296 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-15 18:44:00.531  INFO 17296 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-15 18:44:00.569  INFO 17296 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-15 18:44:00.569  INFO 17296 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 808 ms
+2019-12-15 18:44:00.669  INFO 17296 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-12-15 18:44:00.669  WARN 17296 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-15 18:44:00.673  INFO 17296 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-12-15 18:44:00.686  INFO 17296 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-15 18:44:00.723  INFO 17296 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-15 18:44:01.001  INFO 17296 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-15 18:44:01.038  INFO 17296 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-15 18:44:01.152  INFO 17296 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-15 18:44:01.623  INFO 17296 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-15 18:44:01.640  WARN 17296 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-15 18:44:01.736  INFO 17296 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-15 18:44:01.981  INFO 17296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-15 18:44:01.982  INFO 17296 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Started BlogApplication in 2.274 seconds (JVM running for 1259.522)
+2019-12-15 18:44:01.984  INFO 17296 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-12-15 18:44:07.454  INFO 17296 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-15 18:44:07.456  INFO 17296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-15 18:44:07.467  INFO 17296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-12-15 18:44:07.473  INFO 17296 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/blog/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.blog', args=[29, {}]}
+2019-12-15 18:44:07.502  INFO 17296 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : blog
+2019-12-15 18:44:07.819  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:44:07.828  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:44:07.962  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.comments', args=[29, {}]}
+2019-12-15 18:44:07.995  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-12-15 18:44:17.414  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-15 18:44:17.417  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-15 18:44:17.669  INFO 17296 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:44:17.676  INFO 17296 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:44:22.942  INFO 17296 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.login', args=[sxs, 111111, org.apache.catalina.session.StandardSessionFacade@1e61d2df, {}]}
+2019-12-15 18:44:22.949  INFO 17296 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-15 18:44:22.966  INFO 17296 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:44:22.978  WARN 17296 --- [http-nio-8080-exec-8] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-15 18:44:22.983  WARN 17296 --- [http-nio-8080-exec-8] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-15 18:44:22.987  INFO 17296 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:44:23.280  INFO 17296 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:44:23.284  INFO 17296 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:44:25.846  INFO 17296 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/blog/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.blog', args=[29, {}]}
+2019-12-15 18:44:25.856  INFO 17296 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Result : blog
+2019-12-15 18:44:26.143  INFO 17296 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:44:26.147  INFO 17296 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:44:26.273  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.comments', args=[29, {}]}
+2019-12-15 18:44:26.290  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-12-15 18:44:35.141  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.post', args=[Comment{id=null, nickname='sxsduki', email='1075424437@qq.com', content='测试', avatar='null', createTime=null}, org.apache.catalina.session.StandardSessionFacade@1e61d2df]}
+2019-12-15 18:44:35.147  INFO 17296 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/comments/29
+2019-12-15 18:44:35.162  INFO 17296 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.comments', args=[29, {}]}
+2019-12-15 18:44:35.177  INFO 17296 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-12-15 18:44:41.462  INFO 17296 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/logout', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.logout', args=[org.apache.catalina.session.StandardSessionFacade@1e61d2df]}
+2019-12-15 18:44:41.463  INFO 17296 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-15 18:44:41.469  INFO 17296 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:44:41.481  INFO 17296 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:44:41.813  INFO 17296 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:44:41.817  INFO 17296 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:44:44.506  INFO 17296 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-15 18:44:44.506  INFO 17296 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-15 18:44:44.752  INFO 17296 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:44:44.756  INFO 17296 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:44:50.650  INFO 17296 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.login', args=[测试, 111111, org.apache.catalina.session.StandardSessionFacade@1e61d2df, {}]}
+2019-12-15 18:44:50.654  INFO 17296 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-15 18:44:50.662  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:44:50.672  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:44:50.964  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:44:50.967  INFO 17296 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:44:55.031  INFO 17296 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/blog/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.blog', args=[29, {}]}
+2019-12-15 18:44:55.036  INFO 17296 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : blog
+2019-12-15 18:44:55.323  INFO 17296 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:44:55.328  INFO 17296 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:44:55.463  INFO 17296 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.comments', args=[29, {}]}
+2019-12-15 18:44:55.481  INFO 17296 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-12-15 18:45:09.871  INFO 17296 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.post', args=[Comment{id=null, nickname='测试', email='3212664529@qq.com', content='测试', avatar='null', createTime=null}, org.apache.catalina.session.StandardSessionFacade@1e61d2df]}
+2019-12-15 18:45:09.877  INFO 17296 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/comments/29
+2019-12-15 18:45:09.883  INFO 17296 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/comments/29', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.CommentController.comments', args=[29, {}]}
+2019-12-15 18:45:09.897  INFO 17296 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Result : blog :: commentList
+2019-12-15 18:45:24.939  INFO 17296 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:45:24.951  INFO 17296 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:45:25.324  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:45:25.328  INFO 17296 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:49:27.004  INFO 13412 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Starting BlogApplication on DESKTOP-2H3LM8S with PID 13412 (E:\biancheng\webStormWork\blog\target\classes started by 10754 in E:\biancheng\webStormWork\blog)
+2019-12-15 18:49:27.009 DEBUG 13412 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-12-15 18:49:27.009  INFO 13412 --- [restartedMain] com.sxsduki.blog.BlogApplication         : The following profiles are active: dev
+2019-12-15 18:49:27.076  INFO 13412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-15 18:49:27.079  INFO 13412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-15 18:49:27.877  INFO 13412 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-15 18:49:27.970  INFO 13412 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86ms. Found 6 repository interfaces.
+2019-12-15 18:49:28.314  INFO 13412 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8aac79f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-15 18:49:28.842  INFO 13412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-15 18:49:28.952  INFO 13412 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-15 18:49:28.953  INFO 13412 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-15 18:49:28.959  INFO 13412 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\biancheng\IntelliJ IDEA 2019.2\jbr\\bin;E:\biancheng\IntelliJ IDEA 2019.2\jbr\\bin\server;F:\xshell\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;E:\biancheng\Tools\apache-maven-3.6.1\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;E:\biancheng\Git\cmd;E:\biancheng\TortoiseGit\bin;C:\Users\10754\AppData\Local\Microsoft\WindowsApps;C:\Users\10754\AppData\Roaming\npm;.]
+2019-12-15 18:49:29.047  INFO 13412 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-15 18:49:29.048  INFO 13412 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1969 ms
+2019-12-15 18:49:29.206  INFO 13412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-15 18:49:29.207  WARN 13412 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-15 18:49:29.307  INFO 13412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-15 18:49:29.368  INFO 13412 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-15 18:49:29.468  INFO 13412 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2019-12-15 18:49:29.469  INFO 13412 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-15 18:49:29.608  INFO 13412 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-15 18:49:29.757  INFO 13412 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-15 18:49:30.581  INFO 13412 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-15 18:49:30.646  INFO 13412 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-15 18:49:30.975  INFO 13412 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-15 18:49:31.754  INFO 13412 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-15 18:49:31.802  WARN 13412 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-15 18:49:32.264  INFO 13412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-15 18:49:32.531  INFO 13412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-15 18:49:32.533  INFO 13412 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Started BlogApplication in 6.321 seconds (JVM running for 7.591)
+2019-12-15 18:50:23.668  INFO 13412 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-15 18:50:23.670  INFO 13412 --- [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-15 18:50:23.674  INFO 13412 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-15 18:50:23.679  INFO 13412 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-15 18:50:24.289  INFO 13412 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Starting BlogApplication on DESKTOP-2H3LM8S with PID 13412 (E:\biancheng\webStormWork\blog\target\classes started by 10754 in E:\biancheng\webStormWork\blog)
+2019-12-15 18:50:24.289 DEBUG 13412 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-12-15 18:50:24.289  INFO 13412 --- [restartedMain] com.sxsduki.blog.BlogApplication         : The following profiles are active: dev
+2019-12-15 18:50:24.780  INFO 13412 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-15 18:50:24.824  INFO 13412 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 6 repository interfaces.
+2019-12-15 18:50:24.954  INFO 13412 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8aac79f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-15 18:50:25.177  INFO 13412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-12-15 18:50:25.179  INFO 13412 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-15 18:50:25.179  INFO 13412 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-12-15 18:50:25.206  INFO 13412 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-15 18:50:25.206  INFO 13412 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 914 ms
+2019-12-15 18:50:25.273  INFO 13412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-12-15 18:50:25.274  WARN 13412 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-15 18:50:25.278  INFO 13412 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-12-15 18:50:25.287  INFO 13412 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-15 18:50:25.316  INFO 13412 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-12-15 18:50:25.601  INFO 13412 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-15 18:50:25.640  INFO 13412 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-15 18:50:25.748  INFO 13412 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-15 18:50:26.231  INFO 13412 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-15 18:50:26.254  WARN 13412 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-15 18:50:26.359  INFO 13412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-15 18:50:26.528  INFO 13412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-12-15 18:50:26.528  INFO 13412 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Started BlogApplication in 2.281 seconds (JVM running for 61.587)
+2019-12-15 18:50:26.531  INFO 13412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-12-15 18:50:31.323  INFO 13412 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-15 18:50:31.325  INFO 13412 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-15 18:50:31.340  INFO 13412 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-12-15 18:50:31.372  INFO 13412 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:50:31.495  WARN 13412 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-15 18:50:31.518  WARN 13412 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2019-12-15 18:50:31.529  INFO 13412 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:50:32.279  INFO 13412 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:50:32.285  INFO 13412 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:50:33.460  INFO 13412 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-15 18:50:33.463  INFO 13412 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-15 18:50:33.758  INFO 13412 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:50:33.765  INFO 13412 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:50:39.184  INFO 13412 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.login', args=[测试, 111111, org.apache.catalina.session.StandardSessionFacade@6b38b89c, {}]}
+2019-12-15 18:50:39.197  INFO 13412 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-15 18:50:39.216  INFO 13412 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:50:39.231  INFO 13412 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:50:39.568  INFO 13412 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:50:39.573  INFO 13412 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:50:48.598  INFO 13412 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:50:48.623  INFO 13412 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:50:49.116  INFO 13412 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:50:49.123  INFO 13412 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:50:54.493  INFO 13412 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/logout', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.logout', args=[org.apache.catalina.session.StandardSessionFacade@6b38b89c]}
+2019-12-15 18:50:54.493  INFO 13412 --- [http-nio-8080-exec-2] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-15 18:50:54.501  INFO 13412 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:50:54.516  INFO 13412 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:50:54.801  INFO 13412 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:50:54.809  INFO 13412 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:50:56.083  INFO 13412 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-15 18:50:56.084  INFO 13412 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-15 18:50:56.316  INFO 13412 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:50:56.321  INFO 13412 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:51:01.350  INFO 13412 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.login', args=[sxs, 111111, org.apache.catalina.session.StandardSessionFacade@6b38b89c, {}]}
+2019-12-15 18:51:01.355  INFO 13412 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-15 18:51:01.365  INFO 13412 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:51:01.384  INFO 13412 --- [http-nio-8080-exec-9] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:51:01.797  INFO 13412 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:51:01.803  INFO 13412 --- [http-nio-8080-exec-10] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:51:32.024  INFO 13412 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/logout', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.logout', args=[org.apache.catalina.session.StandardSessionFacade@6b38b89c]}
+2019-12-15 18:51:32.025  INFO 13412 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : redirect:/
+2019-12-15 18:51:32.033  INFO 13412 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2019-12-15 18:51:32.049  INFO 13412 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2019-12-15 18:51:32.378  INFO 13412 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:51:32.382  INFO 13412 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2019-12-15 18:51:38.256  INFO 13412 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/login', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.LoginController.loginPage', args=[]}
+2019-12-15 18:51:38.257  INFO 13412 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : /login
+2019-12-15 18:51:39.625  INFO 13412 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2019-12-15 18:51:39.630  INFO 13412 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList

@@ -124,6 +124,11 @@
 						</div>
 					</div>
 					<div class="ui bottom attached segment" th:if="${blog.commentabled}">
+						<h3 class="ui  dividing header" th:if="${session.user ==null}">
+							<span>
+								请先<a href="#" th:href="@{/login}" target="_blank" id="blog-login">登录</a>，
+							</span>才能发评论
+						</h3>
 						<!-- 留言区域列表 -->
 						<div id="comment-container" class="ui teal segment">
 							<div th:fragment="commentList">
@@ -181,7 +186,7 @@
 
 						</div>
 
-						<div id="comment-form" class="ui form">
+						<div id="comment-form" class="ui form" th:if="${session.user} !=null">
 							<!--设置一个隐含域来保存当前保存博客的id-->
 							<input type="hidden" name="blog.id" th:value="${blog.id}">
 							<!--设置隐含域来保存是否已经回复父节点，以及父节点的的id。没有父节点就为-1 -->
@@ -210,6 +215,7 @@
 					</div>
 				</div>
 			</div>
+<!--			目录-->
 			<div id="toolbar" class="m-padded m-fixed m-right-bottom" style="display: none;">
 				<div class="ui vertical icon buttons">
 					<button type="button" class="ui teal toc button">目录</button>

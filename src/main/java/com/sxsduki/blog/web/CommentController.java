@@ -43,7 +43,7 @@ public class CommentController {
         User user = (User) session.getAttribute("user");
 
         //这里如果添加用户登录功能时需要加判断， 因为注册时会保存头像地址，所以不会用默认头像地址
-        if (user != null){
+        if ("ADMIN".equals(user.getRole())){
             comment.setAvatar(user.getAvatar());
             comment.setAdminComment(true);
         }else {
