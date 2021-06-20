@@ -883,3 +883,102 @@ Caused by: java.lang.IllegalArgumentException: Target object must not be null
 2019-12-15 18:51:38.257  INFO 13412 --- [http-nio-8080-exec-7] com.sxsduki.blog.aspect.LogAspect        : Result : /login
 2019-12-15 18:51:39.625  INFO 13412 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
 2019-12-15 18:51:39.630  INFO 13412 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2021-06-20 10:48:59.852  INFO 11476 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Starting BlogApplication on DESKTOP-2H3LM8S with PID 11476 (E:\biancheng\CodeProjects\projects\myblog\target\classes started by 10754 in E:\biancheng\CodeProjects\projects\myblog)
+2021-06-20 10:48:59.854 DEBUG 11476 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2021-06-20 10:48:59.854  INFO 11476 --- [restartedMain] com.sxsduki.blog.BlogApplication         : The following profiles are active: dev
+2021-06-20 10:48:59.941  INFO 11476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-20 10:48:59.941  INFO 11476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-20 10:49:00.772  INFO 11476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-06-20 10:49:00.873  INFO 11476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94ms. Found 6 repository interfaces.
+2021-06-20 10:49:01.240  INFO 11476 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bad6136d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-20 10:49:01.857  INFO 11476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-20 10:49:01.973  INFO 11476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-20 10:49:01.973  INFO 11476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-06-20 10:49:01.980  INFO 11476 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\biancheng\IntelliJ IDEA 2019.2\jbr\\bin;E:\biancheng\IntelliJ IDEA 2019.2\jbr\\bin\server;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;E:\biancheng\Tools\apache-maven-3.6.1\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;E:\biancheng\Git\cmd;E:\biancheng\TortoiseGit\bin;C:\code_bianyi\mingw64\bin;E:\LxRunOffline;E:\biancheng\xshell\;E:\biancheng\xftp\;E:\biancheng\go\bin;C:\Users\10754\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\10754\AppData\Local\Programs\Python\Python37\;C:\Users\10754\AppData\Local\Microsoft\WindowsApps;C:\Users\10754\AppData\Roaming\npm;;.]
+2021-06-20 10:49:02.079  INFO 11476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-20 10:49:02.080  INFO 11476 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2138 ms
+2021-06-20 10:49:02.273  INFO 11476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-20 10:49:02.275  WARN 11476 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-06-20 10:49:02.412  INFO 11476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-20 10:49:02.479  INFO 11476 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-06-20 10:49:02.571  INFO 11476 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2021-06-20 10:49:02.572  INFO 11476 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-06-20 10:49:02.779  INFO 11476 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-06-20 10:49:02.976  INFO 11476 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-06-20 10:49:04.009  INFO 11476 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-20 10:49:04.081  INFO 11476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-20 10:49:04.474  INFO 11476 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-06-20 10:49:05.220  INFO 11476 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-20 10:49:05.281  WARN 11476 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-20 10:49:05.660  INFO 11476 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-06-20 10:49:05.889  INFO 11476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-20 10:49:05.892  INFO 11476 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Started BlogApplication in 6.856 seconds (JVM running for 8.807)
+2021-06-20 10:49:43.910  INFO 11476 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-20 10:49:43.910  INFO 11476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-20 10:49:43.928  INFO 11476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2021-06-20 10:49:43.968  INFO 11476 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-06-20 10:49:44.075  WARN 11476 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-06-20 10:49:44.090  WARN 11476 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-06-20 10:49:44.099  INFO 11476 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2021-06-20 10:50:05.851  INFO 11476 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2021-06-20 10:50:05.862  INFO 11476 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2021-06-20 10:58:29.582  INFO 11672 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Starting BlogApplication on DESKTOP-2H3LM8S with PID 11672 (E:\biancheng\CodeProjects\projects\myblog\target\classes started by 10754 in E:\biancheng\CodeProjects\projects\myblog)
+2021-06-20 10:58:29.585 DEBUG 11672 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2021-06-20 10:58:29.585  INFO 11672 --- [restartedMain] com.sxsduki.blog.BlogApplication         : The following profiles are active: dev
+2021-06-20 10:58:29.694  INFO 11672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-20 10:58:29.694  INFO 11672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-20 10:58:30.415  INFO 11672 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-06-20 10:58:30.503  INFO 11672 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82ms. Found 6 repository interfaces.
+2021-06-20 10:58:30.849  INFO 11672 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$321ff79b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-20 10:58:31.356  INFO 11672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-20 10:58:31.463  INFO 11672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-20 10:58:31.463  INFO 11672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2021-06-20 10:58:31.469  INFO 11672 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\biancheng\IntelliJ IDEA 2019.2\jbr\\bin;E:\biancheng\IntelliJ IDEA 2019.2\jbr\\bin\server;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;E:\biancheng\Tools\apache-maven-3.6.1\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;E:\biancheng\Git\cmd;E:\biancheng\TortoiseGit\bin;C:\code_bianyi\mingw64\bin;E:\LxRunOffline;E:\biancheng\xshell\;E:\biancheng\xftp\;E:\biancheng\go\bin;C:\Users\10754\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\10754\AppData\Local\Programs\Python\Python37\;C:\Users\10754\AppData\Local\Microsoft\WindowsApps;C:\Users\10754\AppData\Roaming\npm;;.]
+2021-06-20 10:58:31.555  INFO 11672 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-20 10:58:31.555  INFO 11672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1861 ms
+2021-06-20 10:58:31.735  INFO 11672 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-20 10:58:31.737  WARN 11672 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-06-20 10:58:31.835  INFO 11672 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-20 10:58:31.883  INFO 11672 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-06-20 10:58:31.939  INFO 11672 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2021-06-20 10:58:31.941  INFO 11672 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-06-20 10:58:32.061  INFO 11672 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-06-20 10:58:32.209  INFO 11672 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-06-20 10:58:33.010  INFO 11672 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-20 10:58:33.072  INFO 11672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-06-20 10:58:33.391  INFO 11672 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-06-20 10:58:34.129  INFO 11672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-20 10:58:34.176  WARN 11672 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-20 10:58:34.591  INFO 11672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-06-20 10:58:34.804  INFO 11672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-20 10:58:34.806  INFO 11672 --- [restartedMain] com.sxsduki.blog.BlogApplication         : Started BlogApplication in 5.931 seconds (JVM running for 7.266)
+2021-06-20 11:01:12.385  INFO 11672 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-20 11:01:12.386  INFO 11672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-20 11:01:12.401  INFO 11672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2021-06-20 11:01:12.440  INFO 11672 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-06-20 11:01:12.545  WARN 11672 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-06-20 11:01:12.558  WARN 11672 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-06-20 11:01:12.568  INFO 11672 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2021-06-20 11:01:13.301  INFO 11672 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2021-06-20 11:01:13.310  INFO 11672 --- [http-nio-8080-exec-6] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2021-06-20 11:07:44.145  INFO 11672 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-06-20 11:07:44.164  INFO 11672 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2021-06-20 11:07:44.581  INFO 11672 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2021-06-20 11:07:44.588  INFO 11672 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2021-06-20 11:07:50.232  INFO 11672 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-06-20 11:07:50.248  INFO 11672 --- [http-nio-8080-exec-5] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2021-06-20 11:07:50.572  INFO 11672 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2021-06-20 11:07:50.580  INFO 11672 --- [http-nio-8080-exec-3] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2021-06-20 11:10:41.956  INFO 11672 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-06-20 11:10:41.972  INFO 11672 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2021-06-20 11:10:42.328  INFO 11672 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2021-06-20 11:10:42.334  INFO 11672 --- [http-nio-8080-exec-1] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2021-06-20 15:34:40.318  WARN 11672 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h35m14s270ms472µs900ns).
+2021-06-20 16:13:41.356  INFO 11672 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.sxsduki.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-06-20 16:13:41.389  INFO 11672 --- [http-nio-8080-exec-8] com.sxsduki.blog.aspect.LogAspect        : Result : index
+2021-06-20 16:13:41.840  INFO 11672 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.sxsduki.blog.web.IndexController.newblogs', args=[{}]}
+2021-06-20 16:13:41.846  INFO 11672 --- [http-nio-8080-exec-4] com.sxsduki.blog.aspect.LogAspect        : Result : _fragments :: newblogList
