@@ -6,4 +6,4 @@
 
 先看一下整体的效果图吧
 首页
-![](tupian/index.png)
+![首页](https://github.com/kl150666/myblog/blob/master/src/main/resources/tupian/index.png)
